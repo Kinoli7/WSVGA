@@ -1,0 +1,1249 @@
+2013/08/05 15:54:41 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/xexu/yii/sv/protected/views/layouts/main.php(13): CModule->__get('bootstrap')
+#2 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#3 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/svga/
+---
+2013/08/05 15:56:12 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/xexu/yii/sv/protected/views/layouts/main.php(13): CModule->__get('bootstrap')
+#2 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#3 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/svga/
+---
+2013/08/05 15:56:12 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/xexu/yii/sv/protected/views/layouts/main.php(13): CModule->__get('bootstrap')
+#2 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#3 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/svga/
+---
+2013/08/05 15:56:13 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.bootstrap" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/base/CModule.php(105): CComponent->__get('bootstrap')
+#1 /home/xexu/yii/sv/protected/views/layouts/main.php(13): CModule->__get('bootstrap')
+#2 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#3 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#8 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#19 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#20 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/svga/
+---
+2013/08/05 16:01:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:02:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:03:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:06:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:06:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:06:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:06:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=user/login
+---
+2013/08/05 16:06:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=user/login
+---
+2013/08/05 16:06:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/login
+---
+2013/08/05 16:09:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "legal".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('legal')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('legal')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/legal')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/legal
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:13:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "legal".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('legal')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('legal')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/legal')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/legal
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "privacy".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('privacy')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('privacy')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/privacy')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/privacy
+HTTP_REFERER=http://localhost/svga/index.php?r=site/legal
+---
+2013/08/05 16:13:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "legal".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('legal')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('legal')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/legal')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/legal
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:28:07 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.0" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('0', '<form class="na...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(31): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 16:45:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "privacy".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('privacy')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('privacy')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/privacy')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/privacy
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 16:53:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 17:03:28 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.0" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('0', '<div class="con...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(36): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:03:40 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.0" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('0', '<div class="con...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(35): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:14:25 [error] [php] Invalid argument supplied for foreach() (/home/xexu/yii/framework/web/CWidgetFactory.php:160)
+Stack trace:
+#0 /home/xexu/yii/sv/protected/views/layouts/main.php(32): SiteController->widget()
+#1 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#2 /home/xexu/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#5 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 /home/xexu/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#7 /home/xexu/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#8 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): SiteController->endContent()
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#11 /home/xexu/yii/framework/web/CController.php(784): SiteController->renderFile()
+#12 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): SiteController->render()
+#13 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /home/xexu/yii/framework/web/CController.php(286): SiteController->runAction()
+#16 /home/xexu/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /home/xexu/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /home/xexu/yii/sv/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php?r=site/index
+in /home/xexu/yii/sv/protected/views/layouts/main.php (32)
+in /home/xexu/yii/sv/protected/views/layouts/column1.php (6)
+in /home/xexu/yii/sv/protected/controllers/SiteController.php (32)
+2013/08/05 17:14:26 [error] [php] Invalid argument supplied for foreach() (/home/xexu/yii/framework/web/CWidgetFactory.php:160)
+Stack trace:
+#0 /home/xexu/yii/sv/protected/views/layouts/main.php(32): SiteController->widget()
+#1 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#2 /home/xexu/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#3 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#4 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#5 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 /home/xexu/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#7 /home/xexu/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#8 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): SiteController->endContent()
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#11 /home/xexu/yii/framework/web/CController.php(784): SiteController->renderFile()
+#12 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): SiteController->render()
+#13 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#15 /home/xexu/yii/framework/web/CController.php(286): SiteController->runAction()
+#16 /home/xexu/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#17 /home/xexu/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#18 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /home/xexu/yii/sv/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php?r=site/index
+in /home/xexu/yii/sv/protected/views/layouts/main.php (32)
+in /home/xexu/yii/sv/protected/views/layouts/column1.php (6)
+in /home/xexu/yii/sv/protected/controllers/SiteController.php (32)
+2013/08/05 17:14:51 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.0" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('0', '<class="pull-le...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:14:52 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.0" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('0', '<class="pull-le...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:16:21 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu span6" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/xexu/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(169): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(173): TbNavbar->run()
+#5 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#12 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#14 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#15 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#17 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#18 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#19 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#23 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#24 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:16:22 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbMenu span6" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /home/xexu/yii/framework/YiiBase.php:316
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(169): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(173): TbNavbar->run()
+#5 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#10 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#12 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#13 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#14 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#15 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#17 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#18 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#19 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#20 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#21 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#23 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#24 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+---
+2013/08/05 17:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:31:25 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('images/test.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(86): CImageComponent->load('images/test.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:31:26 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('images/test.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(86): CImageComponent->load('images/test.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:36:01 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('images/test.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('images/test.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:38:22 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('./koala.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('./koala.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:05 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('./koala.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('./koala.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:11 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('koala.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('koala.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:22 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('koala.jpg', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('koala.jpg')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:29 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:30 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:31 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:31 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:31 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:32 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:32 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:33 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:39:34 [error] [exception.CException] exception 'CException' with message 'image file not found' in /home/xexu/yii/sv/protected/extensions/image/Image.php:78
+Stack trace:
+#0 /home/xexu/yii/sv/protected/extensions/image/CImageComponent.php(41): Image->__construct('/images/koala.j...', Array)
+#1 /home/xexu/yii/sv/protected/extensions/bootstrap/widgets/TbNavbar.php(126): CImageComponent->load('/images/koala.j...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(147): TbNavbar->init()
+#3 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#11 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#12 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#14 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#16 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/svga/index.php
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 17:50:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php
+---
+2013/08/05 18:02:41 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.image" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('image', '<img src="/svga...')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 /home/xexu/yii/sv/protected/views/layouts/main.php(32): CBaseController->widget('bootstrap.widge...', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#8 /home/xexu/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(206): COutputProcessor->run()
+#10 /home/xexu/yii/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#11 /home/xexu/yii/sv/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#12 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#13 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#14 /home/xexu/yii/framework/web/CController.php(784): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#15 /home/xexu/yii/sv/protected/controllers/SiteController.php(32): CController->render('index')
+#16 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#17 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#19 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/svga/index.php?r=site/index
+HTTP_REFERER=http://localhost/svga/index.php?r=user/login
+---
+2013/08/05 18:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 18:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 18:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+---
+2013/08/05 18:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/05 22:57:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/05 22:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/06 01:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/06 11:42:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/06 11:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "privacy".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('privacy')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('privacy')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/privacy')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php?r=site/privacy
+HTTP_REFERER=http://localhost/svga/index.php?r=site/index
+---
+2013/08/06 12:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
+2013/08/08 11:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/login".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/login')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/sv/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php?r=user/login
+HTTP_REFERER=http://localhost/svga/index.php?r=site/contact
+---
