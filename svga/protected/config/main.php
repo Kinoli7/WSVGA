@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'SVGA',
-	'homeUrl' => array('post/index'),
+	// 'homeUrl' => array('post/index'),
 
 	// preloading 'log' component
 	'preload'=>array(
@@ -22,6 +22,8 @@ return array(
 		'application.helpers.*',
 		'application.components.*',
 	),
+
+	'defaultController'=>'post',
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool

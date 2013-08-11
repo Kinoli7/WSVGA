@@ -17,11 +17,14 @@ class Lookup extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return Lookup the static model class
 	 */
+
+	private static $_items=array();
+ 
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
-
+	
 	/**
 	 * @return string the associated database table name
 	 */
@@ -29,6 +32,34 @@ class Lookup extends CActiveRecord
 	{
 		return '{{lookup}}';
 	}
+
+	public static function items($type)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return self::$_items[$type];
+    }
+ 
+    public static function item($type,$code)
+    {
+        if(!isset(self::$_items[$type]))
+            self::loadItems($type);
+        return isset(self::$_items[$type][$code]) ? self::$_items[$type][$code] : false;
+    }
+ 
+    private static function loadItems($type)
+    {
+        self::$_items[$type]=array();
+        $models=self::model()->findAll(array(
+            'condition'=>'type=:type',
+            'params'=>array(':type'=>$type),
+            'order'=>'position',
+        ));
+        foreach($models as $model)
+            self::$_items[$type][$model->code]=$model->name;
+    }
+
+	
 
 	/**
 	 * @return array validation rules for model attributes.

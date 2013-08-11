@@ -26,7 +26,8 @@
                 array('label'=>'Contact', 'url'=> $this->createUrl('site/contact')),
                 // array('label'=>'Login', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=> $this->createUrl('site/login'), 'visible'=> Yii::app()->user->isGuest),
-                array('label'=>'Logout ('. Yii::app()->user->getState('name') .')', 'url'=>$this->createUrl('site/logout'), 'visible'=>!Yii::app()->user->isGuest),
+                array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                // array('label'=>'Logout ('. Yii::app()->user->getState('name') .')', 'url'=>$this->createUrl('site/logout'), 'visible'=>!Yii::app()->user->isGuest),
             ),
         ),
         // 'brand'=>CHtml::image(Yii::app()->getBaseUrl().'/images/koala.jpg'),
@@ -43,7 +44,7 @@
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
-			'homeLink' => Chtml::link(Yii::t('SVGA', 'Inici'), $this->createUrl('site/index'))
+			'homeLink' => Chtml::link(Yii::t('SVGA', 'Inici'), $this->createUrl('post/index'))
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
@@ -60,7 +61,7 @@
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.<br/>
 		<span class="pull-right">
-			<?= CHtml::link(Yii::t('SVGA', 'Home'), $this->createUrl('site/index'))?> |
+			<?= CHtml::link(Yii::t('SVGA', 'Home'), $this->createUrl('post/index'))?> |
 			<?= CHtml::link(Yii::t('SVGA', 'Contacte'), $this->createUrl('site/contact'))?> |
 			<?= CHtml::link(Yii::t('SVGA', 'Política de privacitat'), $this->createUrl('site/privacy'))?> |
 			<?= CHtml::link(Yii::t('dSVGA', 'Quant a aquest web'), $this->createUrl('site/about'))?>

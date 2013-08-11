@@ -12,9 +12,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>Posts</h1>
+<h1>Bienvenido a la página web de SVGA</h1>
+<br>
+	<h3>Noticias</h3>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+
+
