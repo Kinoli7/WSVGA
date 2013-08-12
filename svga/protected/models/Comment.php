@@ -29,7 +29,19 @@ class Comment extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	public function getPendingCommentCount()
+	{
+		return $this->count('status='.self::STATUS_PENDING);
+	}
 
+	public function findRecentComments($limit=10)
+	{
+			return $this->with('post')->findAll(array(
+				'condition'=>'t.status='.self::STATUS_APPROVED,
+				'order'=>'t.create_time DESC',
+				'limit'=>$limit,
+			));
+		}
 	/**
 	 * @return string the associated database table name
 	 */
@@ -82,6 +94,21 @@ class Comment extends CActiveRecord
 			'url' => 'Url',
 			'post_id' => 'Post',
 		);
+	}
+
+	public function getAuthorLink()
+	{
+		if(!empty($this->url))
+			return CHtml::link(CHtml::encode($this->author),$this->url);
+		else
+			return CHtml::encode($this->author);
+	}
+
+	public function getUrl($post=null)
+	{
+		if($post===null)
+			$post=$this->post;
+		return $post->url.'#c'.$this->id;
 	}
 
 	/**

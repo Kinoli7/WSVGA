@@ -3,41 +3,40 @@
 /* @var $data Post */
 ?>
 
-<div class="view">
+<div class="text-left">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
-	<br />
+	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
+	<?php echo CHtml::encode($data->id); ?>
+	<br /> -->
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
+	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>	 -->
+	<h3><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h3>
+		<div class="author">		
+			Posted by <?php echo $data->author->username . ' on ' . date('F j, Y',$data->create_time); ?> <br />
+		</div>
+	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
 	<?php echo CHtml::encode($data->content); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tags')); ?>:</b>
-	<?php echo CHtml::encode($data->tags); ?>
-	<br />
+	
+	
+	<div class="nav">
+		<b><?php echo CHtml::encode($data->getAttributeLabel('Estado')); ?>:</b>
+	
+		<?php $temporal = $data->status;
+		if($temporal ==1)
+			echo CHtml::encode('Borrador  ||'); 
+		if($temporal ==2)
+			echo CHtml::encode('Publicada ||'); 
+		if($temporal ==3)
+			echo CHtml::encode('Archivada ||');?>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
-	<?php echo CHtml::encode($data->status); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('create_time')); ?>:</b>
-	<?php echo CHtml::encode($data->create_time); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('update_time')); ?>:</b>
-	<?php echo CHtml::encode($data->update_time); ?>
-	<br />
-
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('author_id')); ?>:</b>
-	<?php echo CHtml::encode($data->author_id); ?>
-	<br />
-
-	*/ ?>
-
+		<b>Tags:</b>
+		<?php echo implode(', ', $data->tagLinks); ?>
+		<br/>
+		<?php echo CHtml::link('Permalink', $data->url); ?> |
+		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> |
+		Last updated on <?php echo date('F j, Y',$data->update_time); ?>
+		<div class="pull-right btn"><b>	<?php echo CHtml::link(CHtml::encode('Leer más'), array('view', 'id'=>$data->id)); ?></b></div>
+	</div>
 </div>

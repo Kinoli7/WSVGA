@@ -203,7 +203,7 @@ class CListView extends CBaseListView
 		parent::init();
 
 		if(!isset($this->htmlOptions['class']))
-			$this->htmlOptions['class']='list-view';
+			$this->htmlOptions['class']='text-right';
 
 		if($this->baseScriptUrl===null)
 			$this->baseScriptUrl=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias('zii.widgets.assets')).'/listview';
