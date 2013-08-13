@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Post', 'url'=>array('create')),
-	array('label'=>'Manage Post', 'url'=>array('admin')),
+	array('label'=>'Crear Post', 'url'=>array('create')),
+	array('label'=>'Gestionar Post', 'url'=>array('admin')),
 );
 ?>
 

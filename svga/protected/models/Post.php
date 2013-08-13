@@ -19,9 +19,9 @@
  */
 class Post extends CActiveRecord
 {
-	const STATUS_DRAFT=1;
-    const STATUS_PUBLISHED=2;
-    const STATUS_ARCHIVED=3;
+	const STATUS_BORRADOR=1;
+    const STATUS_PUBLICADO=2;
+    const STATUS_ARCHIVADO=3;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.

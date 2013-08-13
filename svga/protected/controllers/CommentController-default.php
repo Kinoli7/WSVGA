@@ -1,6 +1,6 @@
 <?php
 
-class PostController extends Controller
+class CommentController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -45,20 +45,16 @@ class PostController extends Controller
 		);
 	}
 
-	
-
 	/**
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView()
+	public function actionView($id)
 	{
-		$post=$this->loadModel();
-    	$this->render('view',array(
-        	'model'=>$post,
-    	));
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
 	}
-	private $_model;
 
 	/**
 	 * Creates a new model.
@@ -66,14 +62,14 @@ class PostController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Post;
+		$model=new Comment;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Comment']))
 		{
-			$model->attributes=$_POST['Post'];
+			$model->attributes=$_POST['Comment'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -95,9 +91,9 @@ class PostController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Comment']))
 		{
-			$model->attributes=$_POST['Post'];
+			$model->attributes=$_POST['Comment'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -126,24 +122,10 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$criteria=new CDbCriteria(array(
-        'condition'=>'status='.Post::STATUS_PUBLICADO,
-        'order'=>'update_time DESC',
-        'with'=>'commentCount',
-    	));
-	    if(isset($_GET['tag']))
-	        $criteria->addSearchCondition('tags',$_GET['tag']);
-	 
-	    $dataProvider=new CActiveDataProvider('Post', array(
-	        'pagination'=>array(
-	            'pageSize'=>10,
-	        ),
-	        'criteria'=>$criteria,
-	    ));
-	 
-	    $this->render('index',array(
-	        'dataProvider'=>$dataProvider,
-	    	));
+		$dataProvider=new CActiveDataProvider('Comment');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
 	}
 
 	/**
@@ -151,10 +133,10 @@ class PostController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Post('search');
+		$model=new Comment('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Post']))
-			$model->attributes=$_GET['Post'];
+		if(isset($_GET['Comment']))
+			$model->attributes=$_GET['Comment'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -165,35 +147,24 @@ class PostController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Post the loaded model
+	 * @return Comment the loaded model
 	 * @throws CHttpException
 	 */
-	public function loadModel()
+	public function loadModel($id)
 	{
-	 if($this->_model===null)
-	    {
-	        if(isset($_GET['id']))
-	        {
-	            if(Yii::app()->user->isGuest)
-	                $condition='status='.Post::STATUS_PUBLICADO
-	                    .' OR status='.Post::STATUS_ARCHIVADO;
-	            else
-	                $condition='';
-	            $this->_model=Post::model()->findByPk($_GET['id'], $condition);
-	        }
-	        if($this->_model===null)
-	            throw new CHttpException(404,'The requested page does not exist.');
-	    }
-	    return $this->_model;
+		$model=Comment::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Post $model the model to be validated
+	 * @param Comment $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='post-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='comment-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

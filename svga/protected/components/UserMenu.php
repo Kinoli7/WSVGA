@@ -6,12 +6,15 @@ class UserMenu extends CPortlet
 {
 	public function init()
 	{
-		$this->title=CHtml::encode(Yii::app()->user->name);
+		$loguear='Bienvenid@: ';
+		$nombre=Yii::app()->user->name;
+		$loguear = $loguear . $nombre;
+		$this->title=CHtml::encode($loguear);
 		parent::init();
 	}
 
 	protected function renderContent()
 	{
-		$this->render('userMenu');
+		$this->render('adminMenu');
 	}
 }
