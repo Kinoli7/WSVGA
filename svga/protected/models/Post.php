@@ -143,6 +143,15 @@ class Post extends CActiveRecord
 			'author_id' => 'Author',
 		);
 	}
+	public function addComment($comment)
+{
+    if(Yii::app()->params['commentNeedApproval'])
+        $comment->status=Comment::STATUS_PENDING;
+    else
+        $comment->status=Comment::STATUS_APPROVED;
+    $comment->post_id=$this->id;
+    return $comment->save();
+}
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -169,3 +178,4 @@ class Post extends CActiveRecord
 		));
 	}
 }
+

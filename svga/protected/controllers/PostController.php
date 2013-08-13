@@ -53,11 +53,14 @@ class PostController extends Controller
 	 */
 	public function actionView()
 	{
-		$post=$this->loadModel();
-    	$this->render('view',array(
-        	'model'=>$post,
-    	));
-	}
+	$post=$this->loadModel();
+	    $comment=$this->newComment($post);
+	 
+	    $this->render('view',array(
+	        'model'=>$post,
+	        'comment'=>$comment,
+	    ));
+		}
 	private $_model;
 
 	/**
@@ -83,6 +86,21 @@ class PostController extends Controller
 		));
 	}
 
+protected function newComment($post)
+{
+    $comment=new Comment;
+    if(isset($_POST['Comment']))
+    {
+        $comment->attributes=$_POST['Comment'];
+        if($post->addComment($comment))
+        {
+            if($comment->status==Comment::STATUS_PENDING)
+                Yii::app()->user->setFlash('commentSubmitted','Thank you for your comment. Your comment will be posted once it is approved.');
+            $this->refresh();
+        }
+    }
+    return $comment;
+}
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
