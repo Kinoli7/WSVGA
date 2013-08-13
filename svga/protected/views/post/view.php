@@ -24,5 +24,16 @@ $this->breadcrumbs=array(
 $(".btn").css({"display": "none"});
 </script>
 
-
+<div id="comments">
+    <?php if($model->commentCount>=1): ?>
+        <h3>
+            <?php echo $model->commentCount . ' comment(s)'; ?>
+        </h3>
+ 
+        <?php $this->renderPartial('_comments',array(
+            'post'=>$model,
+            'comments'=>$model->comments,
+        )); ?>
+    <?php endif; ?>
+</div>
 

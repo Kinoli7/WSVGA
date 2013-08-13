@@ -57,7 +57,8 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-
+	<br />
+	<hr>
 	<div id="footer">
 		Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.<br/>
 		<span class="pull-right">

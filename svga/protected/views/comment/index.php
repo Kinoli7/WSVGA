@@ -14,7 +14,9 @@ $this->menu=array(
 
 <h1>Comments</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
+<div class="text-left">
+	<?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
-)); ?>
+	)); ?>
+</div>

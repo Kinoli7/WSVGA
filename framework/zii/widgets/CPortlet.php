@@ -109,9 +109,9 @@ class CPortlet extends CWidget
 	{
 		if($this->title!==null)
 		{
-			echo "<div class=\"{$this->decorationCssClass}\">\n";
+			echo "<h4>";
 			echo "<div class=\"{$this->titleCssClass}\">{$this->title}</div>\n";
-			echo "</div>\n";
+			echo "</h4>\n";
 		}
 	}
 
