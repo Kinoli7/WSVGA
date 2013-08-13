@@ -7,8 +7,8 @@
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'comment-form',
-	'enableAjaxValidation'=>false,
+    'id'=>'comment-form',
+    'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -21,7 +21,7 @@
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
-	<div class="row">
+<!-- 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
 		<?php echo $form->textField($model,'status'); ?>
 		<?php echo $form->error($model,'status'); ?>
@@ -31,7 +31,7 @@
 		<?php echo $form->labelEx($model,'create_time'); ?>
 		<?php echo $form->textField($model,'create_time'); ?>
 		<?php echo $form->error($model,'create_time'); ?>
-	</div>
+	</div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'author'); ?>
@@ -45,7 +45,7 @@
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
-	<div class="row">
+<!-- 	<div class="row">
 		<?php echo $form->labelEx($model,'url'); ?>
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'url'); ?>
@@ -55,7 +55,7 @@
 		<?php echo $form->labelEx($model,'post_id'); ?>
 		<?php echo $form->textField($model,'post_id'); ?>
 		<?php echo $form->error($model,'post_id'); ?>
-	</div>
+	</div> -->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

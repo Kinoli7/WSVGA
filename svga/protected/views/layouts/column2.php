@@ -12,6 +12,7 @@
 				<?php $this->widget('RecentComments', array(
 					'maxComments'=>Yii::app()->params['recentCommentCount'],
 				)); ?>
+				
 			
 			<h4>SÍGUENOS EN</h4>
 				<ul style="list-style: none;">

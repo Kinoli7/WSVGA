@@ -53,17 +53,19 @@ return array(
             // ImageMagick setup path
             'params'=>array('directory'=>'/opt/local/bin'),
         ),
+
 		// uncomment the following to enable URLs in path-format
-		/*
+		
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'post/<id:\d+>/<title:.*?>'=>'post/view',
+                'posts/<tag:.*?>'=>'post/index',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
+		
 		'db'=>array(
             'connectionString'=>'sqlite:/home/xexu/yii/svga/protected/data/blog.db',
             'tablePrefix'=>'tbl_',

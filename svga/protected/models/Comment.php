@@ -121,7 +121,7 @@ class Comment extends CActiveRecord
 	 * @param integer the maximum number of comments that should be returned
 	 * @return array the most recently added comments
 	 */
-	public function findRecentComments($limit=10)
+	public function findRecentComments($limit=2)
 	{
 		return $this->with('post')->findAll(array(
 			'condition'=>'t.status='.self::STATUS_APPROVED,
@@ -129,6 +129,7 @@ class Comment extends CActiveRecord
 			'limit'=>$limit,
 		));
 	}
+
 
 	/**
 	 * This is invoked before the record is saved.

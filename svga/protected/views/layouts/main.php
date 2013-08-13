@@ -22,8 +22,9 @@
             'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
                 // array('label'=>'Home', 'url'=> $this->createUrl('site/index')),
-                array('label'=>'Home', 'url'=> $this->createUrl('post/index')),
-                array('label'=>'Contact', 'url'=> $this->createUrl('site/contact')),
+                array('label'=>'Inicio', 'url'=> $this->createUrl('post/index')),
+                array('label'=>'Contacto', 'url'=> $this->createUrl('site/contact')),
+                array('label'=>'Calendario', 'url'=> $this->createUrl('site/calendario')),
                 // array('label'=>'Login', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=> $this->createUrl('site/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
