@@ -1,11 +1,38 @@
 <?php
+/**
+ * class UserIdentity
+ * @author Igor Ivanović
+ * Main extended core yii framework class used for auth system 
+ */
 class UserIdentity extends CUserIdentity
 {
-    private $_id;
- 
-    public function authenticate()
+
+    /**
+     * 
+     * @var type int
+     */
+    public $_id;
+
+    /**
+     * Overrided parent method
+     * @return type 
+     */
+    public function getId() 
     {
-        $username=strtolower($this->username);
+        return $this->_id;
+    }
+
+    /**
+     * Authenticate user
+     * @return type 
+     */
+    public function authenticate() 
+    {
+        $user = User::prepareUserForAuthorisation($this->username);
+        
+	if($user === NULL) 
+        {
+                $username=strtolower($this->username);
         $user=User::model()->find('LOWER(username)=?',array($username));
         if($user===null)
             $this->errorCode=self::ERROR_USERNAME_INVALID;
@@ -19,9 +46,9 @@ class UserIdentity extends CUserIdentity
         }
         return $this->errorCode==self::ERROR_NONE;
     }
- 
-    public function getId()
-    {
-        return $this->_id;
+	}
+        
+	return $this->errorCode;
     }
+    
 }

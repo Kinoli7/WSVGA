@@ -56,6 +56,14 @@ class Post extends CActiveRecord
 		return $links;
 	}
 
+		public function getUserLinks()
+	{
+		$links=array();
+		foreach(User::string2array($this->author_id) as $user)
+			$links[]=CHtml::link(CHtml::encode($user), array('post/index', 'username'=>$user));
+		return $links;
+	}
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -135,6 +143,7 @@ class Post extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Title',
+			'description' => 'Description',
 			'content' => 'Content',
 			'tags' => 'Tags',
 			'status' => 'Status',

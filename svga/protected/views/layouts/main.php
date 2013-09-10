@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
     
     'items'=>array(
@@ -24,18 +25,19 @@
                 // array('label'=>'Home', 'url'=> $this->createUrl('site/index')),
                 array('label'=>'Inicio', 'url'=> $this->createUrl('post/index')),
                 array('label'=>'Contacto', 'url'=> $this->createUrl('site/contact')),
-                array('label'=>'Calendario', 'url'=> $this->createUrl('site/calendario')),
                 // array('label'=>'Login', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=> $this->createUrl('site/login'), 'visible'=> Yii::app()->user->isGuest),
+                array('label'=>'Login-test', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                 // array('label'=>'Logout ('. Yii::app()->user->getState('name') .')', 'url'=>$this->createUrl('site/logout'), 'visible'=>!Yii::app()->user->isGuest),
             ),
         ),
-        // 'brand'=>CHtml::image(Yii::app()->getBaseUrl().'/images/koala.jpg'),
+        //'brand'=>CHtml::image(Yii::app()->getBaseUrl().'/images/logo.jpg'),
         '<form class="navbar-search pull-right">
                 <input type="text" class="search-query span3" placeholder="Search">
                 <div class="icon-search"></div>
-            </form>'
+            </form>',
+          
     ),
 
 )); ?>

@@ -15,6 +15,6 @@
 </div>
  
 		<?php $this->endWidget(); ?>
-		<?= CHtml::link(Yii::t('engrescat', "No recordes el password?"), $this->createUrl('user/forgot')); ?>
+		<?= CHtml::link(Yii::t('SVGA', "No recordes el password?"), $this->createUrl('user/forgot')); ?>
 
 

@@ -17,9 +17,9 @@
 			<h4>SÍGUENOS EN</h4>
 				<ul style="list-style: none;">
 					<li><a href="http://www.twitch.tv/svgaupc" target="_blank"> TWITCH</a></li>
-					<li><a href="https://twitter.com/Karont3_Club" target="_blank">TWITTER</a></li>
-					<li><a href="http://www.youtube.com/karont3clubtarget" target="_blank">YOUTUBE</a>
-					<li><a href="http://www.facebook.com/Karont3Club" target="_blank">FACEBOOK</a></li>
+					<!-- <li><a href="https://twitter.com/Karont3_Club" target="_blank">TWITTER</a></li> -->
+					<!-- <li><a href="http://www.youtube.com/karont3clubtarget" target="_blank">YOUTUBE</a> -->
+					<li><a href="https://www.facebook.com/svgaupc" target="_blank">FACEBOOK</a></li>
 				</ul>
 			</div>
 		</div>

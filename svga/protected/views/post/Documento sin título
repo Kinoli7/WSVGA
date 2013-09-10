@@ -3,8 +3,6 @@
 /* @var $data Post */
 ?>
 
-
-
 <div class="text-left">
 
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('id')); ?>:</b>
@@ -13,18 +11,12 @@
 
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>	 -->
 	<h3><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h3>
-		<div class="text-left">		
-			<!-- <?php echo implode(', ', $data->userLinks); ?> CREA LINKS USUARIS-->
-			<!-- <img src="<?php echo $data->image; ?>"/> <br /> INTENT IMATGES-->
-			<!-- <?php echo $data->author->username . ', ' . date('F j, Y',$data->create_time); ?> <br /> -->
-			<i class="icon-pencil"></i>Autor: <b><?php echo $data->author->username ?></b>
-			<i class="icon-calendar"></i><?= Yii::app()->dateFormatter->formatDateTime($data->create_time, 'long', 'short')?> <br />
-			<?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . $data->image)?>
-			
-			<?php echo CHtml::encode($data->description); ?>
+		<div class="author">		
+			<!-- <?php echo implode(', ', $data->userLinks); ?> -->
+			<?php echo $data->author->username . ', ' . date('F j, Y',$data->create_time); ?> <br />
 		</div>
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
-
+	<?php echo CHtml::encode($data->content); ?>
 	<br />
 
 	
