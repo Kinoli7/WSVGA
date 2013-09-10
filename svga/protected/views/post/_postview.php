@@ -9,8 +9,7 @@
 	<br /> -->
 
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>	 -->
-	<h3><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h3>
-	<div class="row">
+	<h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h2>
 		<div class="text-left">		
 			<!-- <?php echo implode(', ', $data->userLinks); ?> CREA LINKS USUARIS-->
 			<!-- <img src="<?php echo $data->image; ?>"/> <br /> INTENT IMATGES-->
@@ -18,12 +17,11 @@
 			<i class="icon-pencil"></i>Autor: <b><?php echo $data->author->username ?></b>
 			<i class="icon-calendar"></i><?= Yii::app()->dateFormatter->formatDateTime($data->create_time, 'long', 'short')?> <br />
 			
-				<div class="span2"><?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . $data->image)?></div>
-				<div class="span9"><br/><?php echo CHtml::encode($data->content); ?>
+			<?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . $data->image)?>
+			<br/><?php echo CHtml::encode($data->content); ?>
 		</div>
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
 	<br />
-	</div>
 </div>
 
 	

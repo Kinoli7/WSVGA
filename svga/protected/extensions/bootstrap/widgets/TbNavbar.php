@@ -88,7 +88,9 @@ class TbNavbar extends CWidget
 			// $image->save();
 
 			if (!isset($this->brand)) {
-				$this->brand = CHtml::encode(Yii::app()->name);
+
+				// $this->brand = CHtml::encode(Yii::app()->name); SVGA EN TEXT SENSE FOTO
+				$this->brand = $this->brand = CHtml::image(Yii::app()->getBaseUrl().'/images/logo.jpg');
 			}
 
 			if (!isset($this->brandUrl)) {
@@ -97,11 +99,17 @@ class TbNavbar extends CWidget
 
 			$this->brandOptions['href'] = CHtml::normalizeUrl($this->brandUrl);
 
+			// if (isset($this->brandOptions['class'])) {
+			// 	$this->brandOptions['class'] .= ' brand';		ANTIGA CONFIG
+			// } else {
+			// 	$this->brandOptions['class'] = 'brand';
+			// }
+
 			if (isset($this->brandOptions['class'])) {
-				$this->brandOptions['class'] .= ' brand';
-			} else {
-				$this->brandOptions['class'] = 'brand';
-			}
+			 	$this->brandOptions['class'] .= ' pull-left';		
+			 } else {
+			 	$this->brandOptions['class'] = 'pull-left';
+			 }
 		}
 
 		$classes = array('navbar');

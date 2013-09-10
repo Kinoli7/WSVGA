@@ -3,7 +3,7 @@
 class NewsWidget extends CWidget
 {
     public function init() {
-        $dataProvider = new CActiveDataProvider('News', array(
+        $dataProvider = new CActiveDataProvider('_view', array(
 		    'criteria'=>array(
 		        'order'=>'created DESC',
 		    ),

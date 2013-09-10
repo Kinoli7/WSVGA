@@ -13,7 +13,8 @@ $this->menu=array(
 ?>
 
 <div class="container"><h1>Bienvenido a la página web de SVGA</h1></div>
-	<h2>Noticias</h2>
+<!-- 	<h2>Noticias</h2> -->
+
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

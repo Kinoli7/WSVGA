@@ -16,7 +16,7 @@
 <body>
 
 <?php $this->widget('bootstrap.widgets.TbNavbar',array(
-    
+    // 'brand'=>CHtml::image(Yii::app()->getBaseUrl().'/images/logo.jpg'),
     'items'=>array(
     	
         array(
@@ -32,11 +32,12 @@
                 // array('label'=>'Logout ('. Yii::app()->user->getState('name') .')', 'url'=>$this->createUrl('site/logout'), 'visible'=>!Yii::app()->user->isGuest),
             ),
         ),
-        //'brand'=>CHtml::image(Yii::app()->getBaseUrl().'/images/logo.jpg'),
+        
         '<form class="navbar-search pull-right">
                 <input type="text" class="search-query span3" placeholder="Search">
                 <div class="icon-search"></div>
             </form>',
+        // CHtml::image(Yii::app()->getBaseUrl().'/images/logo.jpg'),	LOGO DRETA
           
     ),
 
@@ -47,7 +48,7 @@
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
-			'homeLink' => Chtml::link(Yii::t('SVGA', 'Inici'), $this->createUrl('post/index'))
+			'homeLink' => Chtml::link(Yii::t('SVGA', 'Inicio'), $this->createUrl('post/index'))
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 

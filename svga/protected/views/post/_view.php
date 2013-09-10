@@ -12,7 +12,7 @@
 	<br /> -->
 
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>	 -->
-	<h3><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h3>
+	<h2><?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id'=>$data->id)); ?></h2>
 		<div class="text-left">		
 			<!-- <?php echo implode(', ', $data->userLinks); ?> CREA LINKS USUARIS-->
 			<!-- <img src="<?php echo $data->image; ?>"/> <br /> INTENT IMATGES-->
