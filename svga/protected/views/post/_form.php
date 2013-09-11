@@ -15,29 +15,38 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Titulo'); ?>
+
+		<?php echo $form->labelEx($model,'Titulo:'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'title'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'Contenido'); ?>
+		<?php echo $form->labelEx($model,'Nombre de la imagen:'); ?>
+		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->error($model,'image'); ?>
+
+
+		<?php echo $form->labelEx($model,'Descripción (resumen):'); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'description'); ?>
+	
+
+		<?php echo $form->labelEx($model,'Contenido (notíciaZ:'); ?>
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
-	</div>
+	
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tags'); ?>
+		<?php echo $form->labelEx($model,'tags:'); ?>
 		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'tags'); ?>
-	</div>
+	
+	<div class="row">
 		<?php echo ('Guardar como:'); ?>
 		<?php echo $form->dropDownList($model,'status',Lookup::items('PostStatus')); ?>
-
+	</div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
 	</div>
+</div>
 
 <?php $this->endWidget(); ?>
 

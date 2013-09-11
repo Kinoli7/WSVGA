@@ -72,7 +72,7 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		 return array(
-        array('title, content, description, status', 'required'),
+        array('title, content, image, description, status', 'required'),
         array('title', 'length', 'max'=>128),
         array('status', 'in', 'range'=>array(1,2,3)),
         array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
@@ -143,6 +143,7 @@ class Post extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'title' => 'Title',
+			'image' => 'Image',
 			'description' => 'Description',
 			'content' => 'Content',
 			'tags' => 'Tags',

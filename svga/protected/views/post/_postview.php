@@ -17,12 +17,11 @@
 			<i class="icon-pencil"></i>Autor: <b><?php echo $data->author->username ?></b>
 			<i class="icon-calendar"></i><?= Yii::app()->dateFormatter->formatDateTime($data->create_time, 'long', 'short')?> <br />
 			
-			<?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . $data->image)?>
+			<div class="text-center"><?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image)?></div>
 			<br/><?php echo CHtml::encode($data->content); ?>
 		</div>
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
 	<br />
-</div>
 
 	
 	
