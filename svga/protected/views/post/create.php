@@ -7,6 +7,9 @@ $this->breadcrumbs=array(
 	'Create',
 );
 
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/tinymce/tinymce.min.js');
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.slug.js');
+
 $this->menu=array(
 	array('label'=>'List Post', 'url'=>array('index')),
 	array('label'=>'Manage Post', 'url'=>array('admin')),

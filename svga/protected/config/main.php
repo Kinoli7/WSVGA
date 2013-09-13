@@ -23,6 +23,10 @@ return array(
 		'application.helpers.*',
 		'application.components.*',
 	),
+	'aliases' => array(
+    //If you manually installed it
+    'xupload' => 'ext.xupload'
+),
 
 	'defaultController'=>'post',
 
@@ -106,5 +110,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'TinyMCEMenubar' => 'core link table hr',
 	),
 );

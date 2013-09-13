@@ -21,7 +21,7 @@
 			<i class="icon-calendar"></i><?= Yii::app()->dateFormatter->formatDateTime($data->create_time, 'long', 'short')?> <br />
 			<div class="clear"><?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image)?></div>
 			
-			<?php echo CHtml::encode($data->description); ?>
+			<?php echo CHtml::encode('<html>' . $data->description . '</html>'); ?>
 		</div>
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
 

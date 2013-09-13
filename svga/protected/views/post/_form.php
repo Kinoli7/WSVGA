@@ -9,6 +9,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
 	'enableAjaxValidation'=>false,
+
 )); ?>
 
 	<p class="note">Todos los campos marcados con <span class="required">*</span> son obligatorios.</p>
@@ -30,13 +31,13 @@
 		<?php echo $form->error($model,'description'); ?>
 	
 
-		<?php echo $form->labelEx($model,'Contenido (notíciaZ:'); ?>
+		<?php echo $form->labelEx($model,'Contenido (notícias):'); ?>
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	
 
 		<?php echo $form->labelEx($model,'tags:'); ?>
-		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textField($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'tags'); ?>
 	
 	<div class="row">
@@ -46,6 +47,26 @@
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
 	</div>
+
+	<script>
+	
+	$(document).ready(function() {
+		
+		$('#News_title_ca').slug({'slug': 'News_slug'});
+		
+		tinymce.init({
+			selector: "textarea",
+			plugins: "textcolor pagebreak table link image emoticons preview",
+			pagebreak_separator: "<!-- mes -->",
+			menubar: 'edit insert format',
+			toolbar: 'undo redo | styleselect forecolor backcolor| bold italic | link image  | pagebreak table hr | emoticons preview',
+		});
+		
+	});
+	
+</script>
+
+
 </div>
 
 <?php $this->endWidget(); ?>
