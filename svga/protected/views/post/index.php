@@ -3,7 +3,7 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Posts',
+	'Home',
 );
 
 $this->menu=array(

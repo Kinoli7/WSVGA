@@ -1,8 +1,9 @@
 <?php
 /* @var $this PostController */
 /* @var $model Post */
+$this->pageTitle = 'SVGA - ' . $model->title;
 $this->breadcrumbs=array(
-	'Posts'=>array('index'),
+	'Home'=>array('index'),
 	$model->title,
 );?>
 
@@ -14,7 +15,8 @@ $this->breadcrumbs=array(
 	array('label'=>'Gestionar Post', 'url'=>array('admin')),
 	);?>
 
-<?php $this->renderPartial('_postview', array(
+<?php 
+	$this->renderPartial('_postview', array(
 	'data'=>$model,
 )); 
 ?>

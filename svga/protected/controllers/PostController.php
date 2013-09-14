@@ -163,7 +163,7 @@ protected function newComment($post)
 	        ),
 	        'criteria'=>$criteria,
 	    ));
-	 
+	  	$this->pageTitle = "SVGA - Noticias"; // It could be something from DB or...whatever
 	    $this->render('index',array(
 	        'dataProvider'=>$dataProvider,
 	    	));

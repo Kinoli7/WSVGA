@@ -19,9 +19,9 @@
 			<!-- <?php echo $data->author->username . ', ' . date('F j, Y',$data->create_time); ?> <br /> -->
 			<i class="icon-pencil"></i>Autor: <b><?php echo $data->author->username ?></b>
 			<i class="icon-calendar"></i><?= Yii::app()->dateFormatter->formatDateTime($data->create_time, 'long', 'short')?> <br />
-			<div class="clear"><?php if($data->image != NULl) echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image)?></div>
+			<div class="clear"><?php if($data->image != NULL and $data->image != 'blanks') echo CHtml::image(Yii::app()->baseUrl . '/images/' . $data->image)?></div>
 			
-			<?php echo CHtml::encode('<html>' . $data->description . '</html>'); ?>
+			<?php echo $data->description;?>
 		</div>
 	<!-- <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b> -->
 
