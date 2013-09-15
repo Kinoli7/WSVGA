@@ -36,13 +36,11 @@ $(".btn").css({"display": "none"});
             'comments'=>$model->comments,
         )); ?>
     <?php endif; ?>
-</div>
 
 <hr>
 
-<div class="span10"
 	<div id="comments">
-	    <h3>Leave a Comment</h3>
+	    <h3>Deja un comentario</h3>
 	 
 	    <?php if(Yii::app()->user->hasFlash('commentSubmitted')): ?>
 	        <div class="flash-success">
@@ -53,6 +51,5 @@ $(".btn").css({"display": "none"});
 	            'model'=>$comment,
 	        )); ?>
 	    <?php endif; ?>
-	 
-	</div><!-- comments -->
+
 </div>

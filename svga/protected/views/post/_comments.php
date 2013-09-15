@@ -7,7 +7,7 @@
 	)); ?>
 
 	<div class="author">
-		<?php echo $comment->authorLink; ?> says:
+		<?php echo $comment->authorLink; ?> dijó:
 	</div>
 
 	<div class="time">
@@ -15,7 +15,7 @@
 	</div>
 
 	<div class="content">
-		<?php echo nl2br(CHtml::encode($comment->content)); ?>
+		<?php echo nl2br($comment->content); ?>
 	</div>
 
 </div><!-- comment -->

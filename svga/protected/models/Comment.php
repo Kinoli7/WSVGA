@@ -67,11 +67,11 @@ class Comment extends CActiveRecord
 	{
 		return array(
 			'id' => 'Id',
-			'content' => 'Comment',
+			'content' => 'Comentario',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
-			'author' => 'Name',
-			'email' => 'Email',
+			'author' => 'Nombre',
+			'email' => 'E-mail',
 			'url' => 'Website',
 			'post_id' => 'Post',
 		);

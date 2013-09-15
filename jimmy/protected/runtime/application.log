@@ -1,0 +1,464 @@
+2012/04/12 06:45:38 [error] [exception.CException] exception 'CException' with message 'Property "Movie.avatar" is not defined.' in C:\wamp\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\framework\db\ar\CActiveRecord.php(144): CComponent->__get('avatar')
+#1 C:\wamp\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('avatar')
+#2 C:\wamp\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Movie), 'avatar')
+#3 C:\wamp\framework\web\helpers\CHtml.php(1219): CHtml::activeInputField('hidden', Object(Movie), 'avatar', Array)
+#4 C:\wamp\framework\web\widgets\CActiveForm.php(590): CHtml::activeHiddenField(Object(Movie), 'avatar', Array)
+#5 C:\wamp\www\jimmy\protected\views\movie\view.php(24): CActiveForm->hiddenField(Object(Movie), 'avatar', Array)
+#6 C:\wamp\framework\web\CBaseController.php(127): require('C:\wamp\www\jim...')
+#7 C:\wamp\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\jim...', Array, true)
+#8 C:\wamp\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\jim...', Array, true)
+#9 C:\wamp\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#10 C:\wamp\www\jimmy\protected\controllers\MovieController.php(55): CController->render('view', Array)
+#11 [internal function]: MovieController->actionView('1')
+#12 C:\wamp\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#13 C:\wamp\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#14 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\framework\web\CWebApplication.php(276): CController->run('view')
+#23 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/view')
+#24 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/jimmy/index.php/movie/1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/create
+---
+2012/04/12 06:47:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\wamp\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(271): CController->missingAction('upload')
+#1 C:\wamp\framework\web\CWebApplication.php(276): CController->run('upload')
+#2 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/upload')
+#3 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/jimmy/index.php/movie/upload?parent_id=1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 06:50:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#7 C:\wamp\framework\web\CWebApplication.php(276): CController->run('upload')
+#8 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/upload')
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/jimmy/index.php/movie/upload?parent_id=1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 06:51:18 [error] [exception.CHttpException.500] exception 'CHttpException' with message ' does not exists.' in C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php:98
+Stack trace:
+#0 C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php(117): XUploadAction->init()
+#1 C:\wamp\framework\web\actions\CAction.php(75): XUploadAction->run()
+#2 C:\wamp\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(XUploadAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(276): CController->run('upload')
+#11 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/upload')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/jimmy/index.php/movie/upload?parent_id=1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 06:54:18 [error] [exception.CHttpException.500] exception 'CHttpException' with message ' does not exists.' in C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php:98
+Stack trace:
+#0 C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php(117): XUploadAction->init()
+#1 C:\wamp\framework\web\actions\CAction.php(75): XUploadAction->run()
+#2 C:\wamp\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(XUploadAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(276): CController->run('upload')
+#11 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/upload')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/jimmy/index.php/movie/upload?parent_id=1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 06:55:17 [error] [exception.CHttpException.500] exception 'CHttpException' with message ' does not exists.' in C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php:98
+Stack trace:
+#0 C:\wamp\www\jimmy\protected\extensions\xupload\actions\XUploadAction.php(117): XUploadAction->init()
+#1 C:\wamp\framework\web\actions\CAction.php(75): XUploadAction->run()
+#2 C:\wamp\framework\web\CController.php(309): CAction->runWithParams(Array)
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(XUploadAction))
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(XUploadAction), Array)
+#10 C:\wamp\framework\web\CWebApplication.php(276): CController->run('upload')
+#11 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/upload')
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/jimmy/index.php/movie/upload?parent_id=1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 07:37:02 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.EFileCloaker" is invalid. Make sure it points to an existing PHP file.' in C:\wamp\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\wamp\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(MovieController), 'application.ext...', Array)
+#2 C:\wamp\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\wamp\www\jimmy\protected\views\movie\view.php(74): CBaseController->widget('application.ext...', Array)
+#4 C:\wamp\framework\web\CBaseController.php(127): require('C:\wamp\www\jim...')
+#5 C:\wamp\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\jim...', Array, true)
+#6 C:\wamp\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\jim...', Array, true)
+#7 C:\wamp\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#8 C:\wamp\www\jimmy\protected\controllers\MovieController.php(79): CController->render('view', Array)
+#9 [internal function]: MovieController->actionView('1')
+#10 C:\wamp\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#11 C:\wamp\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#12 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\framework\web\CWebApplication.php(276): CController->run('view')
+#21 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/view')
+#22 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/jimmy/index.php/movie/1
+---
+2012/04/12 07:38:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#8 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/35b9c6ca
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 07:42:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#8 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/8ccb37df
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 07:42:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#8 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/fd5c927d
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 07:43:20 [error] [php] Undefined index: id (C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php:103)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/6ecf8ca5
+in C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php (103)
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (69)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 07:58:17 [error] [php] Undefined index: id (C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php:103)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/96dcc9b8
+in C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php (103)
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (69)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 08:17:05 [error] [php] Undefined index: id (C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php:103)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/0a3d5b34
+in C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php (103)
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (69)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 08:18:26 [error] [php] Undefined index: id (C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php:103)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#8 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/49d808e4
+in C:\wamp\www\jimmy\protected\extensions\EFileCloaker.php (103)
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (69)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 08:19:49 [error] [php] include(CVardumper.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\jimmy\protected\controllers\MovieController.php(68): spl_autoload_call()
+#1 C:\wamp\framework\web\actions\CInlineAction.php(50): MovieController->actionDownload()
+#2 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#4 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#7 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#10 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#11 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/0e6127fa
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (68)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 08:20:32 [error] [php] Undefined variable: model (C:\wamp\www\jimmy\protected\controllers\MovieController.php:68)
+Stack trace:
+#0 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#1 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#4 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#7 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#8 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/download/29dc2432
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (68)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 09:41:33 [error] [exception.CException] exception 'CException' with message 'MovieController and its behaviors do not have a method or closure named "download".' in C:\wamp\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\jimmy\protected\views\movie\view.php(78): CComponent->__call('download', Array)
+#1 C:\wamp\www\jimmy\protected\views\movie\view.php(78): MovieController->download('myfastfile.txt', true)
+#2 C:\wamp\framework\web\CBaseController.php(127): require('C:\wamp\www\jim...')
+#3 C:\wamp\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\jim...', Array, true)
+#4 C:\wamp\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\jim...', Array, true)
+#5 C:\wamp\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\wamp\www\jimmy\protected\controllers\MovieController.php(80): CController->render('view', Array)
+#7 [internal function]: MovieController->actionView('1')
+#8 C:\wamp\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(MovieController), Array)
+#9 C:\wamp\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(MovieController), Object(ReflectionMethod), Array)
+#10 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\framework\web\CWebApplication.php(276): CController->run('view')
+#19 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/view')
+#20 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/jimmy/index.php/movie/1
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/
+---
+2012/04/12 09:43:05 [warning] [ext.file] send() and download() methods are available only for files (obj: C:\wamp\www\jimmy\files\test.txt)
+in C:\wamp\www\jimmy\protected\extensions\cfile\CFile.php (145)
+in C:\wamp\www\jimmy\protected\extensions\cfile\CFile.php (1291)
+in C:\wamp\www\jimmy\protected\extensions\cfile\CFile.php (1300)
+2012/04/12 10:24:37 [error] [php] Undefined variable: filename (C:\wamp\www\jimmy\protected\views\movie\view.php:72)
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(870): MovieController->renderFile()
+#1 C:\wamp\framework\web\CController.php(783): MovieController->renderPartial()
+#2 C:\wamp\www\jimmy\protected\controllers\MovieController.php(83): MovieController->render()
+#3 unknown(0): MovieController->actionView()
+#4 C:\wamp\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#5 C:\wamp\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 C:\wamp\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\framework\web\filters\CFilterChain.php(134): MovieController->runAction()
+#8 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#10 C:\wamp\framework\web\filters\CInlineFilter.php(59): MovieController->filterAccessControl()
+#11 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#12 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\framework\web\CController.php(266): MovieController->runActionWithFilters()
+#14 C:\wamp\framework\web\CWebApplication.php(276): MovieController->run()
+#15 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\jimmy\index.php(13): CWebApplication->run()
+REQUEST_URI=/jimmy/index.php/movie/1
+in C:\wamp\www\jimmy\protected\views\movie\view.php (72)
+in C:\wamp\www\jimmy\protected\controllers\MovieController.php (83)
+in C:\wamp\www\jimmy\index.php (13)
+2012/04/12 10:29:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 10:32:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/1/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 10:34:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/1/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 10:34:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/1/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 10:34:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\wamp\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#9 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#10 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/1/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---
+2012/04/12 10:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "download".' in C:\wamp\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\framework\web\CController.php(271): CController->missingAction('download')
+#1 C:\wamp\framework\web\CWebApplication.php(276): CController->run('download')
+#2 C:\wamp\framework\web\CWebApplication.php(135): CWebApplication->runController('movie/download/...')
+#3 C:\wamp\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\jimmy\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/jimmy/index.php/movie/download/1/02112011.jpg
+HTTP_REFERER=http://localhost/jimmy/index.php/movie/1
+---

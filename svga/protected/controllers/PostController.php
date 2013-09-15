@@ -1,5 +1,5 @@
 <?php
-
+Yii::import("ext.xupload.models.XUploadForm");
 class PostController extends Controller
 {
 	/**
@@ -28,7 +28,7 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'upload'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -45,7 +45,37 @@ class PostController extends Controller
 		);
 	}
 
-	
+ 	// public function actions()
+  //   {
+  //       return array(
+  //           'upload'=>array(
+  //               'class'=>'ext.xupload.actions.XUploadAction',
+  //                       'subfolderVar' => 'parent_id',
+  //                       'path' => realpath(Yii::app()->getBasePath()."/images/"),    //change save file path here.
+  //           ),
+  //       );
+  //   }
+
+	public function actionForm( ) {
+	    $model = new $postphoto;
+	    Yii::import( "xupload.models.XUploadForm" );
+	    $photos = new XUploadForm;
+	    $this->render( '_form', array(
+	        'model' => $post,
+	        'photos' => $photos,
+	    ) );
+}
+	public function actions()
+      {
+          return array(
+              'upload'=>array(
+                  'class'=>'xupload.actions.XUploadAction',
+                  'path' =>Yii::app() -> getBasePath() . "/../uploads",
+                  'publicPath' => Yii::app() -> getBaseUrl() . "/uploads",
+                  'subfolderVar' => "parent_id",
+              ),
+          );
+      }
 
 	/**
 	 * Displays a particular model.

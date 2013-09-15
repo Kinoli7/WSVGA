@@ -8,14 +8,13 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 
 )); ?>
 
 	<p class="note">Todos los campos marcados con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 
 		<?php echo $form->labelEx($model,'Titulo:'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
@@ -70,5 +69,7 @@
 </div>
 
 <?php $this->endWidget(); ?>
+
+
 
 </div><!-- form -->
