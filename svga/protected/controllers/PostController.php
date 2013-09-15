@@ -189,7 +189,7 @@ protected function newComment($post)
 	 
 	    $dataProvider=new CActiveDataProvider('Post', array(
 	        'pagination'=>array(
-	            'pageSize'=>10,
+	            'pageSize'=>5,
 	        ),
 	        'criteria'=>$criteria,
 	    ));
