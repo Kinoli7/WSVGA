@@ -100,7 +100,7 @@ class CListView extends CBaseListView
 	/**
 	 * @var string the CSS class name for the sorter container. Defaults to 'sorter'.
 	 */
-	public $sorterCssClass='btn-group pull-right';
+	public $sorterCssClass='btn-group';
 	public $summaryCssClass='text-right';
 	/**
 	 * @var string the text shown before sort links. Defaults to 'Sort by: '.
@@ -233,7 +233,7 @@ class CListView extends CBaseListView
 			'ajaxVar'=>$this->ajaxVar,
 			'pagerClass'=>$this->pagerCssClass,
 			'loadingClass'=>$this->loadingCssClass,
-			'sorterClass'=>$this->sorterCssClass,
+			'sorterClass'=>'btn-group',
 			'enableHistory'=>$this->enableHistory
 		);
 		if($this->ajaxUrl!==null)
@@ -296,9 +296,11 @@ class CListView extends CBaseListView
 	{
 		if($this->dataProvider->getItemCount()<=0 || !$this->enableSorting || empty($this->sortableAttributes))
 			return;
-		// echo "<br />";
+		echo $this->sorterHeader===null ? Yii::t('zii','Sort by: ') : $this->sorterHeader;
+		echo var_dump($this->sortableAttributes);
+		echo $this->sortableAttributes["create_time"];
 		echo CHtml::openTag('div',array('class'=>$this->sorterCssClass))."\n";
-		echo "<button class='btn btn-primary dropdown-toggle' data-toggle='dropdown'>Ordenar por  <span class='caret'></span></button>\n";
+		echo "<div class='btn btn-primary dropdown-toggle'\n";
 		echo "<ul class='dropdown-menu'>\n";
 		$sort=$this->dataProvider->getSort();
 		foreach($this->sortableAttributes as $name=>$label)
@@ -310,7 +312,7 @@ class CListView extends CBaseListView
 				echo $sort->link($name,$label);
 			echo "</li>\n";
 		}
-		echo "</ul>";
+		echo "</ul></div>";
 		echo $this->sorterFooter;
 		echo CHtml::closeTag('div');
 	}

@@ -142,12 +142,12 @@ class Post extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'image' => 'Image',
-			'description' => 'Description',
-			'content' => 'Content',
+			'title' => 'Titulo',
+			'image' => 'Imagen',
+			'description' => 'Descripcion',
+			'content' => 'Contenido',
 			'tags' => 'Tags',
-			'status' => 'Status',
+			'status' => 'Estado',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
 			'author_id' => 'Author',

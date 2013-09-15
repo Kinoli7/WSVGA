@@ -42,12 +42,12 @@
 		if($temporal ==3)
 			echo 'Archivada ||';?>
 
-		<b>Tags:</b>
-		<div class="icon-tag"></div><?php echo implode(', <div class="icon-tag"></div>', $data->tagLinks); ?>
+		<i class="icon-tags"></i><b>Tags:</b>
+		<?php echo implode('<i class="icon-tag"></i> , ', $data->tagLinks); ?><i class="icon-tag"></i>
 		<br/>
-		<?php echo CHtml::link('Permalink', $data->url); ?> <div class="icon-globe"></div> |
-		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> <div class="icon-comment"></div> |
-		Last updated on <?php echo date('F j, Y',$data->update_time); ?> <div class="icon-time"></div>
+		<?php echo CHtml::link('Permalink', $data->url); ?> <i class="icon-globe"></i> |
+		<?php echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?> <i class="icon-comment"></i> |
+		Last updated on <?php echo date('F j, Y',$data->update_time); ?> <i class="icon-time"></i>
 		<div class="pull-right btn"><b>	<?php echo CHtml::link(CHtml::encode('Leer más'), array('view', 'id'=>$data->id)); ?></b></div>
 	</div>
 </div>
