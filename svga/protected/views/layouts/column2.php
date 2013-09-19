@@ -1,5 +1,6 @@
 <?php $this->beginContent('/layouts/main'); ?>
-	<div class="row">
+	<div class="container-fluid">
+	<div class="row-fluid">
 		<div class="span2">
 			<div id="sidebar">
 				<?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); ?>
@@ -27,3 +28,4 @@
 				<?php $this->endContent(); ?>
 		</div>
 	</div>
+</div>

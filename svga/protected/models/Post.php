@@ -138,8 +138,8 @@ class Post extends CActiveRecord
 			'comments' => array(self::HAS_MANY, 'Comment', 'post_id',
             'condition'=>'comments.status='.Comment::STATUS_APPROVED,
             'order'=>'comments.create_time DESC'),
-        'commentCount' => array(self::STAT, 'Comment', 'post_id',
-            'condition'=>'status='.Comment::STATUS_APPROVED),
+        	'commentCount' => array(self::STAT, 'Comment', 'post_id',
+            	'condition'=>'status='.Comment::STATUS_APPROVED),
 		);
 	}
 

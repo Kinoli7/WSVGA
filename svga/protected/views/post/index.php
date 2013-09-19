@@ -12,7 +12,7 @@ $this->menu=array(
 );
 ?>
 
-<div class="container"><h1>Bienvenido a la página web de SVGA</h1></div>
+<h1>Bienvenido a la página web de SVGA</h1>
 <!-- 	<h2>Noticias</h2> -->
 
 <!-- MINIATURAS IMAGEN PARA NOTICIAS -->
