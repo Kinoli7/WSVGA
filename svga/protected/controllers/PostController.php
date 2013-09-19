@@ -32,7 +32,7 @@ class PostController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'destacados'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -45,37 +45,6 @@ class PostController extends Controller
 		);
 	}
 
- 	// public function actions()
-  //   {
-  //       return array(
-  //           'upload'=>array(
-  //               'class'=>'ext.xupload.actions.XUploadAction',
-  //                       'subfolderVar' => 'parent_id',
-  //                       'path' => realpath(Yii::app()->getBasePath()."/images/"),    //change save file path here.
-  //           ),
-  //       );
-  //   }
-
-// 	public function actionForm( ) {
-// 	    $model = new $postphoto;
-// 	    Yii::import( "xupload.models.XUploadForm" );
-// 	    $photos = new XUploadForm;
-// 	    $this->render( '_form', array(
-// 	        'model' => $post,
-// 	        'photos' => $photos,
-// 	    ) );
-// }
-// 	public function actions()
-//       {
-//           return array(
-//               'upload'=>array(
-//                   'class'=>'xupload.actions.XUploadAction',
-//                   'path' =>Yii::app() -> getBasePath() . "/../uploads",
-//                   'publicPath' => Yii::app() -> getBaseUrl() . "/uploads",
-//                   'subfolderVar' => "parent_id",
-//               ),
-//           );
-//       }
 
 	/**
 	 * Displays a particular model.
@@ -195,6 +164,29 @@ protected function newComment($post)
 	    ));
 	  	$this->pageTitle = "SVGA - Noticias"; // It could be something from DB or...whatever
 	    $this->render('index',array(
+	        'dataProvider'=>$dataProvider,
+	    	));
+	}
+
+	public function actionDestacados()
+	{
+		$this->layout = '//layouts/main';
+		$criteria=new CDbCriteria(array(
+        'condition'=>'status='.Post::STATUS_PUBLICADO,
+        'order'=>'update_time DESC',
+        'with'=>'commentCount',
+        'offset' => 0,
+        'limit'=>4,
+    	));
+	    if(isset($_GET['tag']))
+	        $criteria->addSearchCondition('tags',$_GET['tag']);
+	 
+	    $dataProvider=new CActiveDataProvider('Post', array(
+	    	'pagination' => false,
+	        'criteria'=>$criteria,
+	    ));
+	  	$this->pageTitle = "SVGA - Noticias"; // It could be something from DB or...whatever
+	    $this->render('destacados',array(
 	        'dataProvider'=>$dataProvider,
 	    	));
 	}

@@ -73,7 +73,7 @@ class CListView extends CBaseListView
 	 * @var string the HTML code to be displayed between any two consecutive items.
 	 * @since 1.1.7
 	 */
-	public $separator='<hr>';
+	public $separator='';
 	/**
 	 * @var array additional data to be passed to {@link itemView} when rendering each data item.
 	 * This array will be extracted into local PHP variables that can be accessed in the {@link itemView}.
