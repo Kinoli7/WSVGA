@@ -10,41 +10,47 @@
 	'id'=>'post-form',
 	'enableAjaxValidation'=>true,
 
-)); ?>
+));
+
+ ?>
 
 	<p class="note">Todos los campos marcados con <span class="required">*</span> son obligatorios.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+	<?php echo $form->errorSummary($model,null,null,array("class"=>"alert alert-error")); ?>
 
+		<?php echo $form->error($model,'title',array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'Titulo:'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'title'); ?>
+		
+		<br />
 
+		<?php echo $form->error($model,'image',array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'Nombre de la imagen:'); ?>
 		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'image'); ?>
+		
+		<br />
 
-
+		<?php echo $form->error($model,'description',array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'Descripción (resumen):'); ?>
 		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	
+		
+		<br />
 
+		<?php echo $form->error($model,'content', array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'Contenido (notícias):'); ?>
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
-	
+		
+		<br />
 
+		<?php echo $form->error($model,'tags', array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'tags:'); ?>
 		<?php echo $form->textField($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'tags'); ?>
+		
 	
-	<div class="row">
+	<div class="clear">
 		<?php echo ('Guardar como:'); ?>
 		<?php echo $form->dropDownList($model,'status',Lookup::items('PostStatus')); ?>
-	</div>
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>
+		<div class="pull-right"><?php echo CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?></div>
 	</div>
 
 	<script>

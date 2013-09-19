@@ -2,12 +2,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca_ES" lang="ca_ES">
 <head>
+	<?php
+$baseUrl = Yii::app()->request->baseUrl;
+$clientScript = Yii::app()->getClientScript();
+$clientScript->registerMetaTag("text/html; charset=utf-8",null,"Content-Type");
+$clientScript->registerMetaTag("es","language");
+$clientScript->registerMetaTag("width=device-width, initial-scale=1.0","viewport");
+$clientScript->registerMetaTag("rios.nicolas@gmail.com","author");
+$clientScript->registerMetaTag("IE=edge",null,"X-UA-Compatible");
+
+
+$clientScript->registerLinkTag('shortcut icon', null, $baseUrl . '/images/logo.jpg');
+?>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="ca_ES" />
 
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/styles.css" />
-
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 	<?php Yii::app()->bootstrap->register(); ?>
@@ -24,6 +35,7 @@
             'items'=>array(
                 // array('label'=>'Home', 'url'=> $this->createUrl('site/index')),
                 array('label'=>'Inicio', 'url'=> $this->createUrl('post/index')),
+                array('label'=>'Galería de Imagenes', 'url'=> $this->createUrl('image/index')),
                 array('label'=>'Contacto', 'url'=> $this->createUrl('site/contact')),
                 // array('label'=>'Login', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=> $this->createUrl('site/login'), 'visible'=> Yii::app()->user->isGuest),
@@ -73,6 +85,7 @@
 			<?= CHtml::link(Yii::t('dSVGA', 'Quant a aquest web'), $this->createUrl('site/about'))?>
 		</span>
 	</div><!-- footer -->
+
 </div><!-- page -->
 
 </body>

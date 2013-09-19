@@ -69,10 +69,15 @@ class Post extends CActiveRecord
 	 */
 	public function rules()
 	{
+		$purify = new CHtmlPurifier();
+		$purify->options = array(
+			'HTML.AllowedComments' => array('mes')
+		);
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		 return array(
-        array('title, content, image, description, status', 'required'),
+        array('title, content, description, status', 'required',
+        	'message'=>'{attribute} no puede estar en blanco'),
         array('title', 'length', 'max'=>128),
         array('status', 'in', 'range'=>array(1,2,3)),
         array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/',
@@ -80,7 +85,10 @@ class Post extends CActiveRecord
         array('tags', 'normalizeTags'),
  
         array('title, status', 'safe', 'on'=>'search'),
+		array('content','filter','filter'=>array($purify,'purify')),
+		array('description','filter','filter'=>array($purify,'purify')),
     	);
+
 	}
 
 	public function normalizeTags($attribute,$params){

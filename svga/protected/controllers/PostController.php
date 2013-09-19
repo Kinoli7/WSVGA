@@ -1,5 +1,4 @@
 <?php
-Yii::import("ext.xupload.models.XUploadForm");
 class PostController extends Controller
 {
 	/**
@@ -7,6 +6,7 @@ class PostController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
+	public static $errorCss = 'alert alert-error';
 
 	/**
 	 * @return array action filters
@@ -56,26 +56,26 @@ class PostController extends Controller
   //       );
   //   }
 
-	public function actionForm( ) {
-	    $model = new $postphoto;
-	    Yii::import( "xupload.models.XUploadForm" );
-	    $photos = new XUploadForm;
-	    $this->render( '_form', array(
-	        'model' => $post,
-	        'photos' => $photos,
-	    ) );
-}
-	public function actions()
-      {
-          return array(
-              'upload'=>array(
-                  'class'=>'xupload.actions.XUploadAction',
-                  'path' =>Yii::app() -> getBasePath() . "/../uploads",
-                  'publicPath' => Yii::app() -> getBaseUrl() . "/uploads",
-                  'subfolderVar' => "parent_id",
-              ),
-          );
-      }
+// 	public function actionForm( ) {
+// 	    $model = new $postphoto;
+// 	    Yii::import( "xupload.models.XUploadForm" );
+// 	    $photos = new XUploadForm;
+// 	    $this->render( '_form', array(
+// 	        'model' => $post,
+// 	        'photos' => $photos,
+// 	    ) );
+// }
+// 	public function actions()
+//       {
+//           return array(
+//               'upload'=>array(
+//                   'class'=>'xupload.actions.XUploadAction',
+//                   'path' =>Yii::app() -> getBasePath() . "/../uploads",
+//                   'publicPath' => Yii::app() -> getBaseUrl() . "/uploads",
+//                   'subfolderVar' => "parent_id",
+//               ),
+//           );
+//       }
 
 	/**
 	 * Displays a particular model.
