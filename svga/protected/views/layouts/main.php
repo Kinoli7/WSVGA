@@ -80,18 +80,20 @@
 
 	<?php echo $content; ?>
 
-	<div id="footer">
-		<span class= "pull-left"> Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.</span>
-		<span class="pull-right">
+	<div class="copyright">
+            <div class="container">
+                <div class="row-fluid">
+            		<div class= "span7"><p>Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.</p></div>
+            		<div class="span5">
+            			<?= CHtml::link(Yii::t('SVGA', 'Home'), $this->createUrl('post/index'))?> |
+            			<?= CHtml::link(Yii::t('SVGA', 'Contacte'), $this->createUrl('site/contact'))?> |
+            			<?= CHtml::link(Yii::t('SVGA', 'Política de privacitat'), $this->createUrl('site/privacy'))?> |
+            			<?= CHtml::link(Yii::t('dSVGA', 'Quant a aquest web'), $this->createUrl('site/about'))?>
+    	          </div>
+	           </div><!-- footer -->
+           </div>
 
-			<?= CHtml::link(Yii::t('SVGA', 'Home'), $this->createUrl('post/index'))?> |
-			<?= CHtml::link(Yii::t('SVGA', 'Contacte'), $this->createUrl('site/contact'))?> |
-			<?= CHtml::link(Yii::t('SVGA', 'Política de privacitat'), $this->createUrl('site/privacy'))?> |
-			<?= CHtml::link(Yii::t('dSVGA', 'Quant a aquest web'), $this->createUrl('site/about'))?>
-		</span>
-	</div><!-- footer -->
-
-</div><!-- page -->
+    </div><!-- page -->
 
 </body>
 </html>
