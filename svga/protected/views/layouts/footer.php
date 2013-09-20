@@ -1,4 +1,4 @@
-<div id="footer">
+<div class="footer">
 		<span class= "pull-left"> Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.</span>
 		<span class="pull-right">
 
