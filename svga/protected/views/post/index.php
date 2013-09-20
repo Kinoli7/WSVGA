@@ -11,13 +11,9 @@ $this->menu=array(
 	array('label'=>'Gestionar Post', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Bienvenido a la página web de SVGA</h1>
-<!-- 	<h2>Noticias</h2> -->
-
-<br />
+<div class="container">
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
+	'dataProvider'=>$dataProvider2,
 	'itemView'=>'_view',
 	'sortableAttributes'=>array(
           'title',
@@ -25,7 +21,5 @@ $this->menu=array(
       ),
 ));
 ?>
-
-
-
+</div>
 

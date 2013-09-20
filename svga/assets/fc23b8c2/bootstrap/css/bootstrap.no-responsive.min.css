@@ -868,8 +868,8 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 .featured-covers { position: relative; margin-top: -5px;}
 .featured-covers article {position: relative; width: 300px;height: 300px;float: left;margin: 5px;padding: 0;overflow: hidden;background: #b3b3b3;-webkit-box-shadow: 0px 0px 7px 1px #1f1f1f;box-shadow: 0px 0px 7px 1px #1f1f1f;}
 .shadow {-webkit-box-shadow: 0px 0px 7px 1px #1f1f1f;box-shadow: 0px 0px 7px 1px #1f1f1f;}
-.featured-covers-inner {/*height: 619px*/;width: 700px;margin: 0 0 5px -5px;padding: 0 5px 0 5px;overflow: hidden;}
-.featured-covers article.cover-left {margin-left: 0;}
+.featured-covers-inner {/*height: 619px*/;width: 1100px;margin: 0 0 5px -5px;padding: 0 5px 0 5px;overflow: hidden;}
+.featured-covers article.cover-left {margin-left: 0; margin-right: 15px; margin-bottom: 10px;}
 .featured-covers article header {position: absolute;left: 0;bottom: 10px;width: 260px;height: 70px;margin: 10px 10px 0 10px;padding: 10px;background: rgb(255,255,255);background: rgba(255,255,255,0.9);}
 .shadow {-webkit-box-shadow: 0px 0px 7px 1px #1f1f1f;box-shadow: 0px 0px 7px 1px #1f1f1f;}
 .featured-covers article header .meta {margin: 0;font-size: 14px;line-height: 14px;}

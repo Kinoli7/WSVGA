@@ -5,7 +5,9 @@ class PostController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+
+	//DEFINIM EL LAYOUT PER 2 COLUMNES
+	// public $layout='//layouts/column2';
 	public static $errorCss = 'alert alert-error';
 
 	/**
@@ -28,11 +30,11 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'upload'),
+				'actions'=>array('index','view', 'upload','destacados'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'destacados'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -148,35 +150,56 @@ protected function newComment($post)
 	 */
 	public function actionIndex()
 	{
-		$criteria=new CDbCriteria(array(
-        'condition'=>'status='.Post::STATUS_PUBLICADO,
-        'order'=>'update_time DESC',
-        'with'=>'commentCount',
+		$this->layout = '//layouts/mainsinfooter';
+		$criteriaPost=new CDbCriteria(array(
+	        'condition'=>'status='.Post::STATUS_PUBLICADO,
+	        'order'=>'update_time DESC',
+	        'with'=>'commentCount',
     	));
 	    if(isset($_GET['tag']))
 	        $criteria->addSearchCondition('tags',$_GET['tag']);
 	 
-	    $dataProvider=new CActiveDataProvider('Post', array(
+	    $dataProviderPost=new CActiveDataProvider('Post', array(
 	        'pagination'=>array(
 	            'pageSize'=>5,
 	        ),
-	        'criteria'=>$criteria,
+	        'criteria'=>$criteriaPost,
 	    ));
+
+	    $criteriaDestacados=new CDbCriteria(array(
+	        'condition'=>'status='.Post::STATUS_PUBLICADO,
+	        'order'=>'update_time DESC',
+	        'limit'=>3,
+    	));
+	    if(isset($_GET['tag']))
+	        $criteria->addSearchCondition('tags',$_GET['tag']);
+	 
+	    $dataProviderDestacados=new CActiveDataProvider('Post', array(
+	    	'pagination' => false,
+
+	        'criteria'=>$criteriaDestacados,
+	    ));
+
 	  	$this->pageTitle = "SVGA - Noticias"; // It could be something from DB or...whatever
-	    $this->render('index',array(
-	        'dataProvider'=>$dataProvider,
-	    	));
+	   	$this->render('destacados',array(
+	   		'dataProvider1'=>$dataProviderDestacados,
+	   	));
+	   	$this->layout = '//layouts/footer';
+	   	$this->renderPartial('index',array(
+        	'dataProvider2'=>$dataProviderPost,
+    	));
+    	
 	}
 
 	public function actionDestacados()
 	{
-		$this->layout = '//layouts/main';
+		$this->layout='//layouts/mainsinfooter';
 		$criteria=new CDbCriteria(array(
         'condition'=>'status='.Post::STATUS_PUBLICADO,
         'order'=>'update_time DESC',
         'with'=>'commentCount',
         'offset' => 0,
-        'limit'=>4,
+        'limit'=>6,
     	));
 	    if(isset($_GET['tag']))
 	        $criteria->addSearchCondition('tags',$_GET['tag']);
@@ -185,9 +208,9 @@ protected function newComment($post)
 	    	'pagination' => false,
 	        'criteria'=>$criteria,
 	    ));
-	  	$this->pageTitle = "SVGA - Noticias"; // It could be something from DB or...whatever
+	  	$this->pageTitle = "SVGA - Destacados"; // It could be something from DB or...whatever
 	    $this->render('destacados',array(
-	        'dataProvider'=>$dataProvider,
+	        'dataProvider1'=>$dataProvider,
 	    	));
 	}
 
