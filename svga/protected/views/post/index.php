@@ -11,16 +11,52 @@ $this->menu=array(
 	array('label'=>'Gestionar Post', 'url'=>array('admin')),
 );
 ?>
-<div class="container">
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <div id="sidebar">
+        <?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); ?>
+
+        <?php $this->widget('TagCloud', array(
+          'maxTags'=>Yii::app()->params['tagCloudCount'],
+        )); ?>
+          <h4><b>SÍGUENOS EN</b></h4>
+        <ul style="list-style: none;">
+          <li><a href="http://www.twitch.tv/svgaupc" target="_blank"> TWITCH</a></li>
+          <!-- <li><a href="https://twitter.com/Karont3_Club" target="_blank">TWITTER</a></li> -->
+          <!-- <li><a href="http://www.youtube.com/karont3clubtarget" target="_blank">YOUTUBE</a> -->
+          <li><a href="https://www.facebook.com/svgaupc" target="_blank">FACEBOOK</a></li>
+        </ul>
+        <a class="twitter-timeline" href="https://twitter.com/SVGAupc" data-widget-id="381027193351983104">Tweets por @SVGAupc</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+<!--         <?php $this->widget('RecentComments', array(
+          'maxComments'=>Yii::app()->params['recentCommentCount'],
+        )); ?> -->
+        
+      
+    
+      </div>
+    </div>
+    <div class="span10">
+
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider2,
-	'itemView'=>'_view',
-	'sortableAttributes'=>array(
+  'dataProvider'=>$dataProvider2,
+  'itemView'=>'_view',
+  'sortableAttributes'=>array(
           'title',
           'create_time'=>'Fecha',
       ),
 ));
 ?>
+    </div>
+  </div>
+</div>
+<div class="container">
+
 </div>
 
 	<div class="copyright">

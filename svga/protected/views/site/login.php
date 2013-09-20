@@ -8,10 +8,11 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
-
+<div class="container-fluid">
 <h1>Login</h1>
 
 <p>Please fill out the following form with your login credentials:</p>
+
 
 <div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -43,3 +44,4 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
+</div>

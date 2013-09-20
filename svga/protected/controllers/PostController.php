@@ -185,9 +185,10 @@ protected function newComment($post)
 	   	$this->render('destacados',array(
 	   		'dataProvider1'=>$dataProviderDestacados,
 	   	));
-	   	$this->layout = '//layouts/footer';
+	   	$this->layout = '//layouts/column2';
 	   	$this->renderPartial('index',array(
         	'dataProvider2'=>$dataProviderPost,
+        	'layout'=>'//layouts/column2',
     	));
     	
 	}
