@@ -9537,3 +9537,323 @@ Stack trace:
 REQUEST_URI=/svga/index.php/post/index
 in /home/xexu/yii/svga/protected/controllers/PostController.php (153)
 in /home/xexu/yii/svga/index.php (13)
+2013/09/20 02:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "destacados".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('destacados')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/destacados
+---
+2013/09/20 02:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "destacados".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('destacados')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/destacados
+---
+2013/09/20 02:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/index.php')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/index.php
+---
+2013/09/20 02:07:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/xexu/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('destacados')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/destacados')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/post/destacados
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/20 02:07:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/xexu/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('destacados')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/destacados')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/post/destacados
+---
+2013/09/20 02:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "destacados".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('destacados')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/destacados
+---
+2013/09/20 02:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "destacados".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('destacados')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/destacados
+---
+2013/09/20 02:08:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/xexu/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('destacados')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/destacados')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/post/destacados
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/20 02:42:54 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:11 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:13 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:45 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:45 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:46 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:46 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 02:43:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/xexu/yii/svga/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/xexu/yii/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/xexu/yii/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/xexu/yii/...')
+#1 /home/xexu/yii/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(478): CAssetManager->publish('/home/xexu/yii/...', false, -1, false)
+#3 /home/xexu/yii/svga/protected/extensions/bootstrap/components/packages.php(15): Bootstrap->getAssetsUrl()
+#4 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(218): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(203): Bootstrap->appendUserSuppliedPackagesToOurs()
+#6 /home/xexu/yii/svga/protected/extensions/bootstrap/components/Bootstrap.php(171): Bootstrap->includeAssets()
+#7 /home/xexu/yii/framework/base/CModule.php(387): Bootstrap->init()
+#8 /home/xexu/yii/framework/base/CModule.php(523): CModule->getComponent('bootstrap')
+#9 /home/xexu/yii/framework/base/CApplication.php(152): CModule->preloadComponents()
+#10 /home/xexu/yii/framework/YiiBase.php(125): CApplication->__construct('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/home/xexu/yii/...')
+#12 /home/xexu/yii/svga/index.php(13): YiiBase::createWebApplication('/home/xexu/yii/...')
+#13 {main}
+REQUEST_URI=/svga/index.php/post/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---

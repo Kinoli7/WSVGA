@@ -2,23 +2,34 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ca_ES" lang="ca_ES">
 <head>
-<?php
-	$baseUrl = Yii::app()->request->baseUrl;
-	$clientScript = Yii::app()->getClientScript();
-	$clientScript->registerMetaTag("text/html; charset=utf-8",null,"Content-Type");
-	$clientScript->registerMetaTag("es","language");
-	$clientScript->registerMetaTag("width=device-width, initial-scale=1.0","viewport");
-	$clientScript->registerMetaTag("rios.nicolas@gmail.com","author");
-	$clientScript->registerMetaTag("IE=edge",null,"X-UA-Compatible");
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-	$clientScript->registerLinkTag('shortcut icon', null, $baseUrl . '/images/logo.jpg');
-?>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="ca_ES" />
-
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
-
-	<?php Yii::app()->bootstrap->register(); ?>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/style.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/style_responsive.css" />
+    <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/favicon.ico" />
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/fancybox/source/jquery.fancybox.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/effects.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/flexslider/flexslider.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/glyphicons/css/glyphicons.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/themes/default.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/headers/header1.css" />
+    <!--<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/unify/css/headers/header1-red.css" />-->
+    
+    
+    <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/js/bootstrap.min.js"></script> 
 </head>
 
 <body>
@@ -69,9 +80,6 @@
 
 	<?php echo $content; ?>
 
-	<div class="clear"></div>
-	<br />
-	<hr>
 	<div id="footer">
 		<span class= "pull-left"> Copyright &copy; <?php echo date('Y'); ?> by SVGA. || All Rights Reserved.</span>
 		<span class="pull-right">

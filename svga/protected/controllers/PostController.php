@@ -30,7 +30,7 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'upload','destacados'),
+				'actions'=>array('index','view', 'upload'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -42,6 +42,7 @@ class PostController extends Controller
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
+				'actions'=>array('destacados'),
 				'users'=>array('*'),
 			),
 		);
@@ -169,7 +170,7 @@ protected function newComment($post)
 	    $criteriaDestacados=new CDbCriteria(array(
 	        'condition'=>'status='.Post::STATUS_PUBLICADO,
 	        'order'=>'update_time DESC',
-	        'limit'=>3,
+	        'limit'=>4,
     	));
 	    if(isset($_GET['tag']))
 	        $criteria->addSearchCondition('tags',$_GET['tag']);

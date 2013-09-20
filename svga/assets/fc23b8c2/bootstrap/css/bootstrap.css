@@ -933,6 +933,7 @@ a.badge:focus {
 .badge-inverse[href] {
   background-color: #1a1a1a;
 }
+
 .btn .label,
 .btn .badge {
   position: relative;
