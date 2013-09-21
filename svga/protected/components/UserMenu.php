@@ -9,7 +9,7 @@ class UserMenu extends CPortlet
 		$loguear='Bienvenid@: ';
 		$nombre=Yii::app()->user->name;
 		$loguear = $loguear . $nombre;
-		$this->title=CHtml::encode($loguear);
+		$this->title='<b>' . CHtml::encode($loguear) . '</b>';
 		parent::init();
 	}
 

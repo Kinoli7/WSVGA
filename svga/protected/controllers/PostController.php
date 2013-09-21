@@ -158,7 +158,7 @@ protected function newComment($post)
 	        'with'=>'commentCount',
     	));
 	    if(isset($_GET['tag']))
-	        $criteria->addSearchCondition('tags',$_GET['tag']);
+	        $criteriaPost->addSearchCondition('tags',$_GET['tag']);
 	 
 	    $dataProviderPost=new CActiveDataProvider('Post', array(
 	        'pagination'=>array(
@@ -173,7 +173,7 @@ protected function newComment($post)
 	        'limit'=>4,
     	));
 	    if(isset($_GET['tag']))
-	        $criteria->addSearchCondition('tags',$_GET['tag']);
+	        $criteriaPost->addSearchCondition('tags',$_GET['tag']);
 	 
 	    $dataProviderDestacados=new CActiveDataProvider('Post', array(
 	    	'pagination' => false,
@@ -188,7 +188,6 @@ protected function newComment($post)
 	   	$this->layout = '//layouts/column2';
 	   	$this->renderPartial('index',array(
         	'dataProvider2'=>$dataProviderPost,
-        	'layout'=>'//layouts/column2',
     	));
     	
 	}

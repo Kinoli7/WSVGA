@@ -42,7 +42,6 @@ return array(
 
 		
 	),
-
 	// application components
 	'components'=>array(
 		'bootstrap'=>array('class'=>'application.extensions.bootstrap.components.Bootstrap'),

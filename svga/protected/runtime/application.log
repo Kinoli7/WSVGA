@@ -9857,3 +9857,601 @@ Stack trace:
 REQUEST_URI=/svga/index.php/post/index
 HTTP_REFERER=http://localhost/svga/index.php/post/index
 ---
+2013/09/20 15:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('favicon.ico')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('favicon.ico')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/favicon.ic...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/site/favicon.ico
+---
+2013/09/20 15:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.png".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('favicon.png')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('favicon.png')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/favicon.pn...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/site/favicon.png
+---
+2013/09/20 16:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('favicon.ico')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('favicon.ico')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/favicon.i...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/favicon.ico
+---
+2013/09/20 16:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.png".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('favicon.png')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('favicon.png')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/favicon.p...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/favicon.png
+---
+2013/09/20 16:33:36 [error] [php] Undefined variable: fileListOfDirectory (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:33:50 [error] [php] Undefined variable: data (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:33:51 [error] [php] Undefined variable: data (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:33:59 [error] [php] Undefined variable: fileListOfDirectory (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:34:00 [error] [php] Undefined variable: fileListOfDirectory (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:35:20 [error] [php] Undefined variable: fileListOfDirectory (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:35:21 [error] [php] Undefined variable: fileListOfDirectory (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:37:46 [error] [php] var_dump() expects at least 1 parameter, 0 given (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CBaseController.php(95): ImageController->renderInternal()
+#1 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#2 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#3 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#4 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#5 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#6 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#7 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:38:06 [error] [php] Use of undefined constant filelist - assumed 'filelist' (/home/xexu/yii/svga/protected/views/image/index.php:43)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#1 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(32): ImageController->render()
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#6 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/views/image/index.php (43)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (32)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/winner.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/torneos.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/lolwin.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/fblogin.png
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/winner.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/torneos.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/lolwin.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 16:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "home".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('home')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('home')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/home/xexu...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/home/xexu/yii/gallery/fblogin.png
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 17:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('magnific-popup')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('magnific-popup')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/magnific-...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/magnific-popup/magnific-popup.css
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 17:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('magnific-popup')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('magnific-popup')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/magnific-...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/magnific-popup/jquery.magnific-popup.js
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 17:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('magnific-popup')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('magnific-popup')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/magnific-...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/magnific-popup/jquery.magnific-popup.js
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 17:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "magnific-popup".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('magnific-popup')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('magnific-popup')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/magnific-...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/magnific-popup/magnific-popup.css
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/20 18:20:15 [error] [php] include(EMagnificPopup.php): failed to open stream: No such file or directory (/home/xexu/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php(20): spl_autoload_call()
+#1 /home/xexu/yii/framework/YiiBase.php(314): require()
+#2 /home/xexu/yii/framework/web/CWidgetFactory.php(146): import()
+#3 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#4 /home/xexu/yii/framework/web/CBaseController.php(189): ImageController->createWidget()
+#5 /home/xexu/yii/svga/protected/views/image/index.php(31): ImageController->beginWidget()
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): ImageController->renderInternal()
+#8 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#9 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#10 /home/xexu/yii/svga/protected/controllers/ImageController.php(28): ImageController->render()
+#11 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#12 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#14 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#15 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#16 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php (20)
+in /home/xexu/yii/svga/protected/views/image/index.php (31)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (28)
+2013/09/20 18:20:16 [error] [php] include(EMagnificPopup.php): failed to open stream: No such file or directory (/home/xexu/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php(20): spl_autoload_call()
+#1 /home/xexu/yii/framework/YiiBase.php(314): require()
+#2 /home/xexu/yii/framework/web/CWidgetFactory.php(146): import()
+#3 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#4 /home/xexu/yii/framework/web/CBaseController.php(189): ImageController->createWidget()
+#5 /home/xexu/yii/svga/protected/views/image/index.php(31): ImageController->beginWidget()
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): ImageController->renderInternal()
+#8 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#9 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#10 /home/xexu/yii/svga/protected/controllers/ImageController.php(28): ImageController->render()
+#11 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#12 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#14 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#15 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#16 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php (20)
+in /home/xexu/yii/svga/protected/views/image/index.php (31)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (28)
+2013/09/20 18:21:15 [error] [php] include(EMagnificPopup.php): failed to open stream: No such file or directory (/home/xexu/yii/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php(20): spl_autoload_call()
+#1 /home/xexu/yii/framework/YiiBase.php(314): require()
+#2 /home/xexu/yii/framework/web/CWidgetFactory.php(146): import()
+#3 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#4 /home/xexu/yii/framework/web/CBaseController.php(189): ImageController->createWidget()
+#5 /home/xexu/yii/svga/protected/views/image/index.php(31): ImageController->beginWidget()
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): ImageController->renderInternal()
+#8 /home/xexu/yii/framework/web/CController.php(869): ImageController->renderFile()
+#9 /home/xexu/yii/framework/web/CController.php(782): ImageController->renderPartial()
+#10 /home/xexu/yii/svga/protected/controllers/ImageController.php(28): ImageController->render()
+#11 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#12 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/xexu/yii/framework/web/CController.php(286): ImageController->runAction()
+#14 /home/xexu/yii/framework/web/CController.php(265): ImageController->runActionWithFilters()
+#15 /home/xexu/yii/framework/web/CWebApplication.php(282): ImageController->run()
+#16 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/image/index
+in /home/xexu/yii/svga/protected/extensions/magnific-popup/EGroupMagnificPopup.php (20)
+in /home/xexu/yii/svga/protected/views/image/index.php (31)
+in /home/xexu/yii/svga/protected/controllers/ImageController.php (28)
+2013/09/20 18:38:44 [error] [exception.CException] exception 'CException' with message 'ImageController contains improperly nested widget tags in its view "/home/xexu/yii/svga/protected/views/image/index.php". A EGroupMagnificPopup widget does not have an endWidget() call.' in /home/xexu/yii/framework/web/CBaseController.php:101
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#1 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(28): CController->render('index', Array)
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/index')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/image/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 18:46:42 [error] [exception.CException] exception 'CException' with message 'ImageController contains improperly nested widget tags in its view "/home/xexu/yii/svga/protected/views/image/index.php". A EMagnificPopup widget does not have an endWidget() call.' in /home/xexu/yii/framework/web/CBaseController.php:101
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#1 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#2 /home/xexu/yii/svga/protected/controllers/ImageController.php(28): CController->render('index', Array)
+#3 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ImageController->actionIndex()
+#4 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/index')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/image/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/20 18:49:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "path-to-image.jpg".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('path-to-image.j...')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('path-to-image.j...')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/path-to-i...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/path-to-image.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/21 12:43:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('assets')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('assets')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('image/assets/im...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/image/assets/img/carousel/3.jpg
+HTTP_REFERER=http://localhost/svga/index.php/image/index
+---
+2013/09/21 13:30:27 [error] [php] implode() expects at most 2 parameters, 3 given (/home/xexu/yii/svga/protected/views/post/_view.php:46)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#1 /home/xexu/yii/framework/zii/widgets/CListView.php(282): PostController->renderFile()
+#2 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(160): CListView->renderItems()
+#3 unknown(0): CListView->renderSection()
+#4 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#5 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(128): CListView->renderContent()
+#6 /home/xexu/yii/framework/web/CBaseController.php(173): CListView->run()
+#7 /home/xexu/yii/svga/protected/views/post/index.php(54): PostController->widget()
+#8 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#9 /home/xexu/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#10 /home/xexu/yii/framework/web/CController.php(869): PostController->renderFile()
+#11 /home/xexu/yii/svga/protected/controllers/PostController.php(191): PostController->renderPartial()
+#12 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#13 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#15 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#18 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#21 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#22 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/post/index
+in /home/xexu/yii/svga/protected/views/post/_view.php (46)
+in /home/xexu/yii/svga/protected/views/post/index.php (54)
+in /home/xexu/yii/svga/protected/controllers/PostController.php (191)
+2013/09/21 13:30:46 [error] [php] Array to string conversion (/home/xexu/yii/svga/protected/views/post/_view.php:46)
+Stack trace:
+#0 /home/xexu/yii/framework/zii/widgets/CListView.php(282): PostController->renderFile()
+#1 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(160): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(143): preg_replace_callback()
+#4 /home/xexu/yii/framework/zii/widgets/CBaseListView.php(128): CListView->renderContent()
+#5 /home/xexu/yii/framework/web/CBaseController.php(173): CListView->run()
+#6 /home/xexu/yii/svga/protected/views/post/index.php(54): PostController->widget()
+#7 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#8 /home/xexu/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#9 /home/xexu/yii/framework/web/CController.php(869): PostController->renderFile()
+#10 /home/xexu/yii/svga/protected/controllers/PostController.php(191): PostController->renderPartial()
+#11 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#12 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#14 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#16 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#18 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#20 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#21 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#22 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#23 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/post/index
+in /home/xexu/yii/svga/protected/views/post/_view.php (46)
+in /home/xexu/yii/svga/protected/views/post/index.php (54)
+in /home/xexu/yii/svga/protected/controllers/PostController.php (191)
+2013/09/21 13:43:15 [error] [php] Undefined variable: criteria (/home/xexu/yii/svga/protected/controllers/PostController.php:161)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/posts/torneo
+in /home/xexu/yii/svga/protected/controllers/PostController.php (161)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/21 13:43:53 [error] [php] Undefined variable: criteria (/home/xexu/yii/svga/protected/controllers/PostController.php:161)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/posts/sorteo
+in /home/xexu/yii/svga/protected/controllers/PostController.php (161)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/21 13:44:17 [error] [php] Undefined variable: criteria (/home/xexu/yii/svga/protected/controllers/PostController.php:176)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/posts/sorteo
+in /home/xexu/yii/svga/protected/controllers/PostController.php (176)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/21 13:44:18 [error] [php] Undefined variable: criteria (/home/xexu/yii/svga/protected/controllers/PostController.php:176)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/posts/sorteo
+in /home/xexu/yii/svga/protected/controllers/PostController.php (176)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/21 13:44:21 [error] [php] Undefined variable: criteria (/home/xexu/yii/svga/protected/controllers/PostController.php:176)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/posts/sorteo
+in /home/xexu/yii/svga/protected/controllers/PostController.php (176)
+in /home/xexu/yii/svga/index.php (13)

@@ -1,11 +1,31 @@
 <?php
 
 class ImageController extends Controller
-{
+{	public $layout='//layouts/images';
 	public function actionIndex()
 	{
+	$fileListOfDirectory = array();
+
+	$pathTofileListDirectory = '/home/xexu/yii/svga/gallery/' ;
+
+	if(!is_dir($pathTofileListDirectory ))
+	{
+	    die(" Invalid Directory");
+	}
+
+	if(!is_readable($pathTofileListDirectory ))
+	{
+	    die("You don't have permission to read Directory");
+	}
+
+	foreach ( new DirectoryIterator ( $pathTofileListDirectory ) as $file ) {
+	      if ($file->getExtension () == "jpg" or $file->getExtension () == "png") {
+	          array_push ( $fileListOfDirectory, $file->getBasename () );
+      }
+	}
+
 		$this->pageTitle = "SVGA - Galeria de Imagenes";
-		$this->render('index');
+		$this->render('index', array('filelist'=>$fileListOfDirectory));
 	}
 
 	// Uncomment the following methods and override them if needed

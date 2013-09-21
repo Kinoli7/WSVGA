@@ -29,7 +29,8 @@ $this->menu=array(
           <li><a href="https://www.facebook.com/svgaupc" target="_blank">FACEBOOK</a></li>
         </ul>
         <a class="twitter-timeline" href="https://twitter.com/SVGAupc" data-widget-id="381027193351983104">Tweets por @SVGAupc</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
 
 
 
@@ -43,15 +44,15 @@ $this->menu=array(
     </div>
     <div class="span10">
 
-<?php $this->widget('zii.widgets.CListView', array(
-  'dataProvider'=>$dataProvider2,
-  'itemView'=>'_view',
-  'sortableAttributes'=>array(
-          'title',
-          'create_time'=>'Fecha',
-      ),
-));
-?>
+    <?php $this->widget('zii.widgets.CListView', array(
+      'dataProvider'=>$dataProvider2,
+      'itemView'=>'_view',
+      'sortableAttributes'=>array(
+              'title',
+              'create_time'=>'Fecha',
+          ),
+    ));
+    ?>
     </div>
   </div>
 </div>

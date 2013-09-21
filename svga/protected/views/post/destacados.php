@@ -8,7 +8,7 @@ $this->menu=array(
 );
 ?>
 <h1 >Bienvenido a la página web de SVGA</h1>
-<h2 class="text-center">Notícias destacadas</h2>
+<div class="headline text-center"><h3>Notícias destacadas</h3></div>
 
 <div class="featured-covers">
 	<div class="featured-covers-inner">

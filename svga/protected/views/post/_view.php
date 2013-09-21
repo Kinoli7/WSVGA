@@ -51,3 +51,4 @@
 		<div class="pull-right btn"><b>	<?php echo CHtml::link(CHtml::encode('Leer más'), array('view', 'id'=>$data->id)); ?></b></div>
 	</div>
 </div>
+<hr>
