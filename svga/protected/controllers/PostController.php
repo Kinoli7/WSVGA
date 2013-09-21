@@ -151,6 +151,33 @@ protected function newComment($post)
 	 */
 	public function actionIndex()
 	{
+		/*
+		** CREA UNA LLISTA DE LES FOTOGRAFIES
+		*/
+		$fileListOfDirectory = array();
+
+		$pathTofileListDirectory = '/home/xexu/yii/svga/gallery/' ;
+
+		if(!is_dir($pathTofileListDirectory ))
+		{
+		    die(" Invalid Directory");
+		}
+
+		if(!is_readable($pathTofileListDirectory ))
+		{
+		    die("You don't have permission to read Directory");
+		}
+
+		foreach ( new DirectoryIterator ( $pathTofileListDirectory ) as $file ) {
+		      if ($file->getExtension () == "jpg" or $file->getExtension () == "png") {
+		          array_push ( $fileListOfDirectory, $file->getBasename () );
+	      }
+		}
+
+		/* 
+		** DEFINIM DATAPROVIDERS PER LES NOTICIES DESTACADES I TOTES LES NOTICIES
+		*/
+
 		$this->layout = '//layouts/mainsinfooter';
 		$criteriaPost=new CDbCriteria(array(
 	        'condition'=>'status='.Post::STATUS_PUBLICADO,
@@ -188,6 +215,7 @@ protected function newComment($post)
 	   	$this->layout = '//layouts/column2';
 	   	$this->renderPartial('index',array(
         	'dataProvider2'=>$dataProviderPost,
+        	'filelist'=>$fileListOfDirectory
     	));
     	
 	}

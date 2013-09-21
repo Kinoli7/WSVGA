@@ -72,6 +72,7 @@
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
+
 	<?php $this->widget('bootstrap.widgets.TbAlert', array(
         'block'=>true, 
         'fade'=>true, 

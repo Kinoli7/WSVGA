@@ -506,7 +506,7 @@ blockquote:hover {
 	position:relative;
 }
 .thumbnail-style a.btn-more {
-	right:-10px;
+	right:10px;
 	bottom:10px;
 	color:#fff;
 	padding:1px 6px;
@@ -519,7 +519,7 @@ blockquote:hover {
 	box-shadow:0 0 0 2px #377500;
 }
 .thumbnail-style:hover a.btn-more {
-	right:10px;
+	right:0px;
 }
 
 .thumbnail-kenburn img {

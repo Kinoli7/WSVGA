@@ -25,22 +25,8 @@
     <!-- CSS Theme -->
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/themes/default.css" />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/headers/header1.css" />
-    <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery.magnific-popup.min.js"></script>
-
     <!--<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/unify/css/headers/header1-red.css" />-->
     
-    
-    <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
-	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/js/bootstrap.min.js"></script> 
-
-    <!-- Magnific Popup core CSS file -->
-    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/magnific.css"> 
-
-    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-
-    <!-- Magnific Popup core JS file -->
-    <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery.magnific-popup.js"></script> 
 </head>
 
 <body>
