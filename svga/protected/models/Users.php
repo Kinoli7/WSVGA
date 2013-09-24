@@ -104,4 +104,29 @@ class Users extends CActiveRecord
     {
         return crypt($password, $this->generateSalt());
     }
+    /**
+	 * Generates a salt that can be used to generate a password hash.
+	 * @return string the salt
+	 */
+	protected function generateSalt()
+	{
+	    return uniqid('',true);
+	}
+
+    protected function beforeSave()
+    {
+        if(parent::beforeSave())
+        {
+            if($this->isNewRecord)
+            {
+                $hash = md5($this->password);
+           	 	$this->password = $hash;
+
+            }
+            return true;
+        }
+        else
+            return false;
+    }
+
 }
