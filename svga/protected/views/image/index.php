@@ -38,7 +38,6 @@ $this->breadcrumbs=array(
       $overCssClass= 'overflow-hidden';
       $liCssClass= 'span3';
 
-      $filepath = '/home/xexu/yii/gallery/';
       foreach($filelist as $key => $value)
       {
         echo CHtml::openTag('li',array('class'=>$liCssClass))."\n";
@@ -59,7 +58,6 @@ $this->breadcrumbs=array(
     <?php 
       $i = 1;
       $id = 'image' . $i;
-      $filepath = '/home/xexu/yii/gallery/';
       foreach($filelist as $key => $value)
       {
         echo CHtml::openTag('div',array('class'=>'item' . $i))."\n";
