@@ -37,9 +37,9 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.slu
 	</div> -->
 
 	<br />
-		<?php echo $form->labelEx($model,'author'); ?>
+<!-- 		<?php echo $form->labelEx($model,'author'); ?>
 		<?php echo $form->textField($model,'author',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'author'); ?>
+		<?php echo $form->error($model,'author'); ?> -->
 	
 
 

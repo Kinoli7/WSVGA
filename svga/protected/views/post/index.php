@@ -11,6 +11,38 @@ $this->menu=array(
 	array('label'=>'Gestionar Post', 'url'=>array('admin')),
 );
 ?>
+<head>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/style.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/style_responsive.css" />
+    <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl; ?>/favicon.ico" />
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/fancybox/source/jquery.fancybox.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/effects.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/flexslider/flexslider.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/glyphicons/css/glyphicons.css">
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/themes/default.css" />
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/headers/header1.css" />
+    <!--<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/unify/css/headers/header1-red.css" />-->
+    
+    <!-- modificacions -->
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/styles.css" />
+    
+    <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+  <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/js/bootstrap.min.js"></script> 
+</head>
 
 <div class="container-fluid">
   <div class="row-fluid">
@@ -21,18 +53,13 @@ $this->menu=array(
         <?php $this->widget('TagCloud', array(
           'maxTags'=>Yii::app()->params['tagCloudCount'],
         )); ?>
-          <h4><b>SÍGUENOS EN</b></h4>
+          <div class ="headline text-center" style="margin-bottom:-20px"><h4><b>SÍGUENOS EN</b></h4></div>
         <ul style="list-style: none;">
-          <li><a href="http://www.twitch.tv/svgaupc" target="_blank"> TWITCH</a></li>
-          <!-- <li><a href="https://twitter.com/Karont3_Club" target="_blank">TWITTER</a></li> -->
-          <!-- <li><a href="http://www.youtube.com/karont3clubtarget" target="_blank">YOUTUBE</a> -->
-          <li><a href="https://www.facebook.com/svgaupc" target="_blank">FACEBOOK</a></li>
+          <li><a href="http://www.twitch.tv/svgaupc" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/images/twitch.png"></img></a></li>
+          <li style="margin-top: -30px;"><a href="https://www.facebook.com/svgaupc" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/images/facebook.png"></img></a></li>
         </ul>
         <a class="twitter-timeline" href="https://twitter.com/SVGAupc" data-widget-id="381027193351983104">Tweets por @SVGAupc</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
-
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!--         <?php $this->widget('RecentComments', array(
           'maxComments'=>Yii::app()->params['recentCommentCount'],

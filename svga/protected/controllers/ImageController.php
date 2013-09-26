@@ -1,7 +1,7 @@
 <?php
 
 class ImageController extends Controller
-{	public $layout='//layouts/images';
+{	
 	public function actionIndex()
 	{
 	$fileListOfDirectory = array();

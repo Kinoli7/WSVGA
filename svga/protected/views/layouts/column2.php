@@ -16,7 +16,8 @@
 			
 			<h4>SÍGUENOS EN</h4>
 				<ul style="list-style: none;">
-					<li><a href="http://www.twitch.tv/svgaupc" target="_blank"> TWITCH</a></li>
+					<img src="<?php echo Yii::app()->baseUrl; ?>/images/twitch.png"></img>
+					<li><a href="http://www.twitch.tv/svgaupc" target="_blank"><img src="<?php echo Yii::app()->baseUrl; ?>/images/twitch.png"></img></a></li>
 					<!-- <li><a href="https://twitter.com/Karont3_Club" target="_blank">TWITTER</a></li> -->
 					<!-- <li><a href="http://www.youtube.com/karont3clubtarget" target="_blank">YOUTUBE</a> -->
 					<li><a href="https://www.facebook.com/svgaupc" target="_blank">FACEBOOK</a></li>

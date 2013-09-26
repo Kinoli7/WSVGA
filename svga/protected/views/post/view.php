@@ -24,7 +24,7 @@ $this->breadcrumbs=array(
 <script type="text/javascript">
 $(".btn").css({"display": "none"});
 </script>
-
+<div class="container-fluid">
 <div id="comments">
     <?php if($model->commentCount>=1): ?>
         <h3>
@@ -52,4 +52,5 @@ $(".btn").css({"display": "none"});
 	        )); ?>
 	    <?php endif; ?>
 
+	</div>
 </div>

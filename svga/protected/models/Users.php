@@ -129,4 +129,8 @@ class Users extends CActiveRecord
             return false;
     }
 
+    public function getUsername(){
+    	return $this->username;
+    }
+
 }

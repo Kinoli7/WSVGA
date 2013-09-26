@@ -47,7 +47,6 @@
                 array('label'=>'Contacto', 'url'=> $this->createUrl('site/contact')),
                 // array('label'=>'Login', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Login', 'url'=> $this->createUrl('site/login'), 'visible'=> Yii::app()->user->isGuest),
-                array('label'=>'Login-test', 'url'=> $this->createUrl('user/login'), 'visible'=> Yii::app()->user->isGuest),
                 array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('site/logout'), 'visible'=>!Yii::app()->user->isGuest)
                 // array('label'=>'Logout ('. Yii::app()->user->getState('name') .')', 'url'=>$this->createUrl('site/logout'), 'visible'=>!Yii::app()->user->isGuest),
             ),
