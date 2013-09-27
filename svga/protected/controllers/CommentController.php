@@ -27,12 +27,12 @@ class CommentController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+			array('allow',
+				'actions'=>array(),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('index','view', 'create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -66,17 +66,22 @@ class CommentController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+		if(!Yii::app()->user->isGuest) {
+			if(isset($_POST['Comment']))
+			{
+				$model->attributes=$_POST['Comment'];
+				if($model->save())
+					$this->redirect(array('view','id'=>$model->id));
+			}
 
-		if(isset($_POST['Comment']))
-		{
-			$model->attributes=$_POST['Comment'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			$this->render('create',array(
+				'model'=>$model,
+			));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		else {
+			Yii::app()->user->setFlash('error', "Para comentar debes loguearte!");
+			$this->redirect(array('site/login'));
+		}
 	}
 
 	/**

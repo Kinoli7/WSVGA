@@ -38,8 +38,9 @@ $this->breadcrumbs=array(
 				<?php echo $form->label($model,'rememberMe'); ?>
 				<?php echo $form->error($model,'rememberMe'); ?>
 
-				<?php echo CHtml::submitButton('Login'); ?>
-
+				<?php echo CHtml::submitButton('Login', array('class' => 'btn btn-primary pull-left')); ?>
+				
+				<?php echo CHtml::link('Registrate', $this->createAbsoluteUrl('post/index'), array('class'=>'btn btn-success pull-right')); ?>
 
 		<?php $this->endWidget(); ?>
 		</div><!-- form -->

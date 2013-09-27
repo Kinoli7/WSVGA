@@ -140,6 +140,9 @@ class Comment extends CActiveRecord
 		{
 			if($this->isNewRecord)
 				$this->create_time=time();
+				$autor=Yii::app()->user->id;
+				$this->author = Yii::app()->user->name;
+				$this->autor_id = Yii::app()->user->id;
 			return true;
 		}
 		else

@@ -98,13 +98,19 @@ protected function newComment($post)
     }
     if(isset($_POST['Comment']))
     {
-        $comment->attributes=$_POST['Comment'];
-        if($post->addComment($comment))
-        {
-            if($comment->status==Comment::STATUS_PENDING)
-                Yii::app()->user->setFlash('commentSubmitted','Gracias por tu comentario. Tu comentario sera publicado cuando sea aprobado.');
-            $this->refresh();
-        }
+        if(!Yii::app()->user->isGuest) {
+	        	$comment->attributes=$_POST['Comment'];
+	        if($post->addComment($comment))
+	        {
+	            if($comment->status==Comment::STATUS_PENDING)
+	                Yii::app()->user->setFlash('commentSubmitted','Gracias por tu comentario. Tu comentario sera publicado cuando sea aprobado.');
+	            $this->refresh();
+	        }
+	    }
+	    else {
+	    	Yii::app()->user->setFlash('error', "Para comentar debes loguearte!");
+	    	$this->redirect(array('site/login'));
+	    }
     }
     return $comment;
 }

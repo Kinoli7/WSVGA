@@ -46,6 +46,7 @@ return array(
 	'components'=>array(
 		'bootstrap'=>array('class'=>'application.extensions.bootstrap.components.Bootstrap'),
 		'user'=>array(
+			'class' => 'WebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
