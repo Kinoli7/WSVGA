@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/themes/default.css" />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/unify/css/headers/header1.css" />
     <!--<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/unify/css/headers/header1-red.css" />-->
-    
+    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/styles.css" />
     
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/js/bootstrap.min.js"></script> 

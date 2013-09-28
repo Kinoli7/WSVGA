@@ -32,6 +32,13 @@ class Post extends CActiveRecord
 		return parent::model($className);
 	}
 
+	public function isAdmin() { // this should say "public function", btw
+  		$testId = Yii::app()->user->id;
+	  	echo $testId;
+	  	print_r(User::model()->findByPk($testId));
+	  	die();
+	}
+
 	/**
 	 * @return string the associated database table name
 	 */

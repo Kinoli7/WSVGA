@@ -67,16 +67,16 @@ class CommentController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		if(!Yii::app()->user->isGuest) {
-			if(isset($_POST['Comment']))
-			{
-				$model->attributes=$_POST['Comment'];
-				if($model->save())
-					$this->redirect(array('view','id'=>$model->id));
-			}
+		if(isset($_POST['Comment']))
+		{
+			$model->attributes=$_POST['Comment'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
 
-			$this->render('create',array(
-				'model'=>$model,
-			));
+		$this->render('create',array(
+			'model'=>$model,
+		));
 		}
 		else {
 			Yii::app()->user->setFlash('error', "Para comentar debes loguearte!");

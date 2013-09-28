@@ -71,21 +71,28 @@ class PostController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Post;
+		if(Yii::app()->user->getName()=='admin') {
+			$model=new Post;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+			// Uncomment the following line if AJAX validation is needed
+			// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
-		{
-			$model->attributes=$_POST['Post'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if(isset($_POST['Post']))
+			{
+				$model->attributes=$_POST['Post'];
+				if($model->save())
+					$this->redirect(array('view','id'=>$model->id));
+			}
+
+			$this->render('create',array(
+				'model'=>$model,
+			));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		else{
+			Yii::app()->user->setFlash('error', "Solo el administrador puede crear posts!");
+			if(Yii::app()->user->isGuest) $this->redirect(array('site/login'));
+			$this->redirect(Yii::app()->user->returnUrl);
+		}
 	}
 
 protected function newComment($post)
@@ -121,21 +128,28 @@ protected function newComment($post)
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		if(Yii::app()->user->getName()=='admin') {
+			$model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		$this->performAjaxValidation($model);
+			// Uncomment the following line if AJAX validation is needed
+			$this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
-		{
-			$model->attributes=$_POST['Post'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			if(isset($_POST['Post']))
+			{
+				$model->attributes=$_POST['Post'];
+				if($model->save())
+					$this->redirect(array('view','id'=>$model->id));
+			}
+
+			$this->render('update',array(
+				'model'=>$model,
+			));
 		}
-
-		$this->render('update',array(
-			'model'=>$model,
-		));
+		else{
+			Yii::app()->user->setFlash('error', "Solo el administrador puede actualizar posts!");
+			if(Yii::app()->user->isGuest) $this->redirect(array('site/login'));
+			$this->redirect(Yii::app()->user->returnUrl);
+		}
 	}
 
 	/**
@@ -145,11 +159,18 @@ protected function newComment($post)
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		if(Yii::app()->user->getName()=='admin') {
+			$this->loadModel($id)->delete();
 
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+			if(!isset($_GET['ajax']))
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		}
+		else{
+			Yii::app()->user->setFlash('error', "Solo el administrador puede borrar posts!");
+			if(Yii::app()->user->isGuest) $this->redirect(array('site/login'));
+			$this->redirect(Yii::app()->user->returnUrl);
+		}
 	}
 
 	/**

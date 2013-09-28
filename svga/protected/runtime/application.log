@@ -1925,3 +1925,1367 @@ Stack trace:
 REQUEST_URI=/svga/index.php/post/view?id=4
 in /home/xexu/yii/svga/protected/controllers/PostController.php (63)
 in /home/xexu/yii/svga/index.php (13)
+2013/09/28 01:22:49 [error] [exception.CException] exception 'CException' with message '$connectorRoute must be set!' in /home/xexu/yii/svga/protected/extensions/elFinder/ElFinderWidget.php:69
+Stack trace:
+#0 /home/xexu/yii/framework/web/CBaseController.php(147): ElFinderWidget->init()
+#1 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.elFinder.El...', Array)
+#2 /home/xexu/yii/svga/protected/views/elfinder/index.php(10): CBaseController->widget('ext.elFinder.El...', Array)
+#3 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#4 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', NULL, true)
+#5 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', NULL, true)
+#6 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /home/xexu/yii/svga/protected/controllers/ElfinderController.php(7): CController->render('index')
+#8 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ElfinderController->actionIndex()
+#9 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('elfinder/index')
+#14 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/svga/index.php/elfinder/index
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 01:23:21 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "search".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('search', Array)
+#1 /home/xexu/yii/svga/protected/views/comment/admin.php(45): CActiveRecord->__call('search', Array)
+#2 /home/xexu/yii/svga/protected/views/comment/admin.php(45): Comment->search()
+#3 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#4 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /home/xexu/yii/svga/protected/controllers/CommentController.php(154): CController->render('admin', Array)
+#8 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionAdmin()
+#9 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/admin')
+#19 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/svga/index.php/comment/admin
+---
+2013/09/28 01:23:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/update')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/comment/update
+---
+2013/09/28 01:24:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getAuthorLink".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('getAuthorLink')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('getAuthorLink')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/getAuth...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/comment/getAuthorLink
+---
+2013/09/28 01:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('profile')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('profile')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/profile')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/users/profile
+---
+2013/09/28 01:35:51 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "lastViset".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/SiteController.php(96): CComponent->__call('lastViset', Array)
+#1 /home/xexu/yii/svga/protected/controllers/SiteController.php(96): SiteController->lastViset()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/svga/index.php/site/login
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/28 01:38:05 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "lastViset".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/SiteController.php(96): CComponent->__call('lastViset', Array)
+#1 /home/xexu/yii/svga/protected/controllers/SiteController.php(96): SiteController->lastViset()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#7 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#8 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#9 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/svga/index.php/site/login
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/28 01:46:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "controller".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('controller')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('controller')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/controller...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/site/controller/action
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/28 01:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "controller".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('controller')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('controller')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/controller...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/site/controller/action
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/28 01:52:10 [error] [php] strpos() expects parameter 1 to be string, object given (/home/xexu/yii/framework/web/CHttpRequest.php:787)
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/SiteController.php(97): SiteController->redirect()
+#1 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#2 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /home/xexu/yii/framework/web/CController.php(286): SiteController->runAction()
+#4 /home/xexu/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#5 /home/xexu/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#6 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/site/login
+in /home/xexu/yii/svga/protected/controllers/SiteController.php (97)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/28 01:52:34 [error] [php] Undefined variable: request (/home/xexu/yii/svga/protected/controllers/SiteController.php:96)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(286): SiteController->runAction()
+#1 /home/xexu/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /home/xexu/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/site/login
+in /home/xexu/yii/svga/protected/controllers/SiteController.php (96)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/28 01:52:47 [error] [php] Missing argument 1 for CWebUser::setReturnUrl(), called in /home/xexu/yii/svga/protected/controllers/SiteController.php on line 99 and defined (/home/xexu/yii/framework/web/auth/CWebUser.php:348)
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#1 /home/xexu/yii/framework/web/CController.php(286): SiteController->runAction()
+#2 /home/xexu/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#3 /home/xexu/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#4 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#5 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#6 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/site/login
+in /home/xexu/yii/svga/protected/controllers/SiteController.php (99)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/28 02:02:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/index.php?r=post/read&id=100
+---
+2013/09/28 02:02:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/index.php?r=post/read&id=1
+---
+2013/09/28 02:02:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/index.php?r=post/view&id=1
+---
+2013/09/28 02:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/index.php?r=post/viewid=1
+---
+2013/09/28 02:02:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php".' in /home/xexu/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('index.php')
+#1 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/svga/index.php/index.php?r=post/viewid=1
+---
+2013/09/28 02:14:34 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "createUrl".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('createUrl', Array)
+#1 /home/xexu/yii/svga/protected/models/Comment.php(108): CActiveRecord->__call('createUrl', Array)
+#2 /home/xexu/yii/svga/protected/models/Comment.php(108): Comment->createUrl('users/view', Array)
+#3 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#4 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#5 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#14 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#15 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#16 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#25 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#26 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:15:14 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "createUrl".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('createUrl', Array)
+#1 /home/xexu/yii/svga/protected/models/Comment.php(108): CActiveRecord->__call('createUrl', Array)
+#2 /home/xexu/yii/svga/protected/models/Comment.php(108): Comment->createUrl('users/view', Array)
+#3 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#4 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#5 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#14 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#15 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#16 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#25 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#26 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:15:15 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "createUrl".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('createUrl', Array)
+#1 /home/xexu/yii/svga/protected/models/Comment.php(108): CActiveRecord->__call('createUrl', Array)
+#2 /home/xexu/yii/svga/protected/models/Comment.php(108): Comment->createUrl('users/view', Array)
+#3 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#4 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#5 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#14 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#15 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#16 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#25 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#26 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:16:24 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(108): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:16:25 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(108): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:16:58 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(109): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:22:01 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(110): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:22:02 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(110): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:23:18 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(111): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:23:18 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(111): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:23:20 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(111): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:23:20 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(111): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:23:20 [error] [exception.CException] exception 'CException' with message 'Property "Comment.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('author_id')
+#1 /home/xexu/yii/svga/protected/models/Comment.php(111): CActiveRecord->__get('author_id')
+#2 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#3 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#4 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#9 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#10 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/users/view')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/users/view?id=
+HTTP_REFERER=http://localhost/svga/index.php/post/view?id=4
+---
+2013/09/28 02:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('users')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/users/view')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/users/view?id=1
+HTTP_REFERER=http://localhost/svga/index.php/post/view?id=4
+---
+2013/09/28 02:26:48 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "createAbsoluteUrl".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('createAbsoluteU...', Array)
+#1 /home/xexu/yii/svga/protected/models/Comment.php(112): CActiveRecord->__call('createAbsoluteU...', Array)
+#2 /home/xexu/yii/svga/protected/models/Comment.php(112): Comment->createAbsoluteUrl('users/view', Array)
+#3 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#4 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#5 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#14 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#15 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#16 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#25 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#26 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:30:21 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "createUrl".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('createUrl', Array)
+#1 /home/xexu/yii/svga/protected/models/Comment.php(112): CActiveRecord->__call('createUrl', Array)
+#2 /home/xexu/yii/svga/protected/models/Comment.php(112): Comment->createUrl('post/index')
+#3 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#4 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('authorLink')
+#5 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CActiveRecord->__get('authorLink')
+#6 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#7 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#9 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#12 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#13 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#14 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#15 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#16 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#25 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#26 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:40:11 [error] [exception.CException] exception 'CException' with message 'Property "PostController.author_id" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/svga/protected/views/post/_comments.php(10): CComponent->__get('author_id')
+#1 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#2 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#3 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#4 /home/xexu/yii/svga/protected/views/post/view.php(37): CController->renderPartial('_comments', Array)
+#5 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#6 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#8 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#9 /home/xexu/yii/svga/protected/controllers/PostController.php(64): CController->render('view', Array)
+#10 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionView()
+#11 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#20 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/view')
+#21 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#22 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/svga/index.php/post/view?id=4
+HTTP_REFERER=http://localhost/svga/index.php/post/index
+---
+2013/09/28 02:53:34 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (/home/xexu/yii/framework/web/helpers/CHtml.php:98)
+Stack trace:
+#0 /home/xexu/yii/framework/base/CComponent.php(111): Comment->getAuthorLink()
+#1 /home/xexu/yii/framework/db/ar/CActiveRecord.php(143): Comment->__get()
+#2 /home/xexu/yii/svga/protected/components/views/recentComments.php(3): Comment->__get()
+#3 /home/xexu/yii/framework/web/CBaseController.php(130): require()
+#4 /home/xexu/yii/framework/web/CBaseController.php(95): RecentComments->renderInternal()
+#5 /home/xexu/yii/framework/web/widgets/CWidget.php(243): RecentComments->renderFile()
+#6 /home/xexu/yii/svga/protected/components/RecentComments.php(17): RecentComments->render()
+#7 /home/xexu/yii/framework/zii/widgets/CPortlet.php(94): RecentComments->renderContent()
+#8 /home/xexu/yii/framework/web/CBaseController.php(173): RecentComments->run()
+#9 /home/xexu/yii/svga/protected/views/post/index.php(66): PostController->widget()
+#10 /home/xexu/yii/framework/web/CBaseController.php(126): require()
+#11 /home/xexu/yii/framework/web/CBaseController.php(95): PostController->renderInternal()
+#12 /home/xexu/yii/framework/web/CController.php(869): PostController->renderFile()
+#13 /home/xexu/yii/svga/protected/controllers/PostController.php(225): PostController->renderPartial()
+#14 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionIndex()
+#15 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#16 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#17 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#19 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#20 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#21 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#23 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#24 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#25 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php
+in /home/xexu/yii/svga/protected/models/Comment.php (110)
+in /home/xexu/yii/svga/protected/components/views/recentComments.php (3)
+in /home/xexu/yii/svga/protected/components/RecentComments.php (17)
+2013/09/29 00:09:03 [error] [exception.CException] exception 'CException' with message 'Property "UsersController.username" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/UsersController.php(80): CComponent->__get('username')
+#1 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#2 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#11 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#12 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/svga/index.php/users/create
+HTTP_REFERER=http://localhost/svga/index.php/users/create
+---
+2013/09/29 00:09:23 [error] [exception.CException] exception 'CException' with message 'Property "UsersController.username" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/UsersController.php(80): CComponent->__get('username')
+#1 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#2 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#9 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#11 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#12 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#13 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/svga/index.php/users/create
+HTTP_REFERER=http://localhost/svga/index.php/users/create
+---
+2013/09/29 00:16:33 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.class" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/xexu/yii/framework/web/CWidgetFactory.php(161): CComponent->__set('class', 'log-page')
+#1 /home/xexu/yii/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(UsersController), 'CActiveForm', Array)
+#2 /home/xexu/yii/framework/web/CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 /home/xexu/yii/svga/protected/views/users/_form.php(13): CBaseController->beginWidget('CActiveForm', Array)
+#4 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#5 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#7 /home/xexu/yii/svga/protected/views/users/create.php(18): CController->renderPartial('_form', Array)
+#8 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#9 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#10 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#11 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /home/xexu/yii/svga/protected/controllers/UsersController.php(91): CController->render('create', Array)
+#13 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#14 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#24 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#25 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/svga/index.php/users/create
+HTTP_REFERER=http://localhost/svga/index.php/site/login
+---
+2013/09/29 01:11:20 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (81)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:11:27 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (81)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:11:28 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (81)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:11:32 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (81)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:14:41 [error] [exception.CException] exception 'CException' with message '$connectorRoute must be set!' in /home/xexu/yii/svga/protected/extensions/elFinder/ElFinderWidget.php:69
+Stack trace:
+#0 /home/xexu/yii/framework/web/CBaseController.php(147): ElFinderWidget->init()
+#1 /home/xexu/yii/framework/web/CBaseController.php(172): CBaseController->createWidget('ext.elFinder.El...', Array)
+#2 /home/xexu/yii/svga/protected/views/elfinder/index.php(10): CBaseController->widget('ext.elFinder.El...', Array)
+#3 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#4 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', NULL, true)
+#5 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', NULL, true)
+#6 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#7 /home/xexu/yii/svga/protected/controllers/ElfinderController.php(7): CController->render('index')
+#8 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): ElfinderController->actionIndex()
+#9 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/xexu/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('elfinder/index')
+#14 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/svga/index.php/elfinder/index
+HTTP_REFERER=http://localhost/svga/index.php/users/index
+---
+2013/09/29 01:14:49 [error] [exception.CException] exception 'CException' with message 'Comment and its behaviors do not have a method or closure named "search".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/framework/db/ar/CActiveRecord.php(225): CComponent->__call('search', Array)
+#1 /home/xexu/yii/svga/protected/views/comment/admin.php(45): CActiveRecord->__call('search', Array)
+#2 /home/xexu/yii/svga/protected/views/comment/admin.php(45): Comment->search()
+#3 /home/xexu/yii/framework/web/CBaseController.php(126): require('/home/xexu/yii/...')
+#4 /home/xexu/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/xexu/yii/...', Array, true)
+#5 /home/xexu/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/xexu/yii/...', Array, true)
+#6 /home/xexu/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#7 /home/xexu/yii/svga/protected/controllers/CommentController.php(154): CController->render('admin', Array)
+#8 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): CommentController->actionAdmin()
+#9 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#16 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#18 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('comment/admin')
+#19 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/svga/index.php/comment/admin
+---
+2013/09/29 01:15:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/xexu/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/users/admin
+---
+2013/09/29 01:15:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/xexu/yii/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/svga/index.php/users/admin
+---
+2013/09/29 01:16:03 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (82)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:16:49 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isAdmin" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CWebUser.php(140): CComponent->__get('isAdmin')
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CWebUser->__get('isAdmin')
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+HTTP_REFERER=http://localhost/svga/index.php/post/create
+---
+2013/09/29 01:17:33 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isAdmin".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CComponent->__call('isAdmin', Array)
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): WebUser->isAdmin()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+HTTP_REFERER=http://localhost/svga/index.php/post/create
+---
+2013/09/29 01:17:38 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isAdmin".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CComponent->__call('isAdmin', Array)
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): WebUser->isAdmin()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+---
+2013/09/29 01:17:44 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.isAdmin" is not defined.' in /home/xexu/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/xexu/yii/framework/web/auth/CWebUser.php(140): CComponent->__get('isAdmin')
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CWebUser->__get('isAdmin')
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+---
+2013/09/29 01:17:49 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isAdmin".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CComponent->__call('isAdmin', Array)
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): WebUser->isAdmin()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+---
+2013/09/29 01:18:40 [error] [exception.CException] exception 'CException' with message 'WebUser and its behaviors do not have a method or closure named "isAdmin".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CComponent->__call('isAdmin', Array)
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): WebUser->isAdmin()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+---
+2013/09/29 01:21:11 [error] [exception.CException] exception 'CException' with message 'PostController and its behaviors do not have a method or closure named "isAdmin".' in /home/xexu/yii/framework/base/CComponent.php:265
+Stack trace:
+#0 /home/xexu/yii/svga/protected/controllers/PostController.php(74): CComponent->__call('isAdmin', Array)
+#1 /home/xexu/yii/svga/protected/controllers/PostController.php(74): PostController->isAdmin()
+#2 /home/xexu/yii/framework/web/actions/CInlineAction.php(49): PostController->actionCreate()
+#3 /home/xexu/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/create')
+#13 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/svga/index.php/post/create
+---
+2013/09/29 01:21:31 [error] [php] Undefined variable: model (/home/xexu/yii/svga/protected/controllers/PostController.php:74)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/post/create
+in /home/xexu/yii/svga/protected/controllers/PostController.php (74)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:21:46 [error] [php] Undefined variable: post (/home/xexu/yii/svga/protected/controllers/PostController.php:74)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/post/create
+in /home/xexu/yii/svga/protected/controllers/PostController.php (74)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:22:29 [error] [php] Use of undefined constant Post - assumed 'Post' (/home/xexu/yii/svga/protected/controllers/PostController.php:74)
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/xexu/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/xexu/yii/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/xexu/yii/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /home/xexu/yii/svga/index.php(13): CWebApplication->run()
+REQUEST_URI=/svga/index.php/post/create
+in /home/xexu/yii/svga/protected/controllers/PostController.php (74)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('upload')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('upload')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/upload')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/upload
+---
+2013/09/29 01:26:49 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/update')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/update
+---
+2013/09/29 01:27:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/update')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/update
+---
+2013/09/29 01:28:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delet".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('delet')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delet')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delet')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/delet
+---
+2013/09/29 01:28:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete
+---
+2013/09/29 01:29:24 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete
+---
+2013/09/29 01:29:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=3
+---
+2013/09/29 01:29:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=3
+---
+2013/09/29 01:30:01 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=3
+---
+2013/09/29 01:30:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=1
+---
+2013/09/29 01:30:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=1
+---
+2013/09/29 01:30:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete
+---
+2013/09/29 01:30:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/xexu/yii/framework/web/CController.php:1118
+Stack trace:
+#0 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /home/xexu/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/xexu/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/xexu/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/xexu/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/xexu/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/xexu/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#9 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/delete')
+#10 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#11 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/svga/index.php/post/delete?id=1
+---

@@ -56,6 +56,7 @@ class Comment extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'post' => array(self::BELONGS_TO, 'Post', 'post_id'),
+            'author'=>array(self::BELONGS_TO, 'User', 'author_id'),
 		);
 	}
 
@@ -69,7 +70,8 @@ class Comment extends CActiveRecord
 			'content' => 'Comentario',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
-			'author_id' => 'Nombre',
+			'author' => 'Nombre',
+			'autor_id' => 'Id del autor',
 			'email' => 'E-mail',
 			'url' => 'Website',
 			'post_id' => 'Post',

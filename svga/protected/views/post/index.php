@@ -38,7 +38,7 @@ $this->menu=array(
     <!--<link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/assets/unify/css/headers/header1-red.css" />-->
     
     <!-- modificacions -->
-    <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/styles.css" />
+    
     
     <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
   <script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/unify/plugins/bootstrap/js/bootstrap.min.js"></script> 

@@ -7,7 +7,7 @@
 	)); ?>
 
 	<div class="author">
-		<?php echo $comment->authorLink; ?> dijó:
+		<?php echo CHtml::link($comment->authorLink); ?> dijó:
 	</div>
 
 	<div class="time">
@@ -19,4 +19,5 @@
 	</div>
 
 </div><!-- comment -->
+<hr>
 <?php endforeach; ?>

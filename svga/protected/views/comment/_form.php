@@ -42,10 +42,10 @@ Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/jquery.slu
 		<?php echo $form->error($model,'author'); ?> -->
 	
 
-
+<!-- 
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'email'); ?>
+		<?php echo $form->error($model,'email'); ?> -->
 
 
 <!-- 	<div class="row">

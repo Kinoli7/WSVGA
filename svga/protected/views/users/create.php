@@ -12,7 +12,7 @@ $this->menu=array(
 	array('label'=>'Manage Users', 'url'=>array('admin')),
 );
 ?>
+<div class="reg" style="margin-bottom:30px;">
 
-<h1>Create Users</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

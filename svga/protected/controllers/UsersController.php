@@ -62,6 +62,7 @@ class UsersController extends Controller
 	 */
 	public function actionCreate()
 	{
+		$this->layout = '//layouts/main';
 				//nomes es pot registrar la gent que no té la sessió iniciada
 		if (!Yii::app() -> user -> isGuest) {
 			Yii::app() -> user -> setFlash('success', Yii::t('SVGA', "Ya tienes la sesión iniciada!"));
@@ -77,8 +78,18 @@ class UsersController extends Controller
 
 			{	
 				$model->attributes = $_POST['Users'];
-				if($model->save())
-					$this->redirect(array('view','id'=>$model->id));
+				if(Users::model()->findByAttributes(array('username'=>$model->username)) == null ){
+					if (Users::model()->findByAttributes(array('email'=>$model->email)) == null){
+						if($model->save())
+							$this->redirect(array('view','id'=>$model->id));
+					}
+					else {
+						Yii::app()->user->setFlash('error', "El e-mail ya esta en uso!");
+					}
+				}
+				else {
+					Yii::app()->user->setFlash('error', "El nombre de usuario ya esta en uso!");
+				}
 			}
 
 			$this->render('create',array(

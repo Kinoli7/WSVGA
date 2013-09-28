@@ -14,6 +14,8 @@
 
  ?>
 
+	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl; ?>/js/upclick-min.js"></script>
+
 	<p class="note">Todos los campos marcados con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model,null,null,array("class"=>"alert alert-error")); ?>

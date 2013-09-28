@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 );
 ?>
 <div class="container-fluid">
-	<div class="row">
+	<div class="row" style="margin-bottom:30px;">
 		<div class="form">
 		<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'login-form',
@@ -19,7 +19,8 @@ $this->breadcrumbs=array(
 			),
 		    'htmlOptions'=>array(
 		        'class'=>'log-page',
-		    ),
+		        'style'=>'padding-bottom:45px;',
+		    )
 		)); ?>
 			<h1>Login</h1>
 			<p class="note">Los campos marcados con <span class="required">*</span> son necesarios.</p>
@@ -40,7 +41,7 @@ $this->breadcrumbs=array(
 
 				<?php echo CHtml::submitButton('Login', array('class' => 'btn btn-primary pull-left')); ?>
 				
-				<?php echo CHtml::link('Registrate', $this->createAbsoluteUrl('post/index'), array('class'=>'btn btn-success pull-right')); ?>
+				<?php echo CHtml::link('Registrate', $this->createAbsoluteUrl('users/create'), array('class'=>'btn btn-success pull-right')); ?>
 
 		<?php $this->endWidget(); ?>
 		</div><!-- form -->
