@@ -48,7 +48,7 @@ $this->menu=array(
   <div class="row-fluid">
     <div class="span2">
       <div id="sidebar">
-        <?php if(!Yii::app()->user->isGuest) $this->widget('UserMenu'); ?>
+        <?php if(Yii::app()->user->getName()=='admin') $this->widget('UserMenu'); ?>
 
         <?php $this->widget('TagCloud', array(
           'maxTags'=>Yii::app()->params['tagCloudCount'],

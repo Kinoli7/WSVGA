@@ -25,7 +25,7 @@
 		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
 		
 		<br />
-
+		<input type="button" id="uploader" value="Upload">
 		<?php echo $form->error($model,'image',array("class"=>"alert alert-error")); ?>
 		<?php echo $form->labelEx($model,'Nombre de la imagen:'); ?>
 		<?php echo $form->textField($model,'image',array('size'=>60,'maxlength'=>128)); ?>
@@ -72,6 +72,27 @@
 	});
 	
 </script>
+
+<script type="text/javascript">
+
+   var uploader = document.getElementById('uploader');
+   upclick(
+     {
+      element: uploader,
+      action: '/home/xexu/yii/svga/php/server.php', 
+      onstart:
+        function(filename)
+        {
+          alert('Start upload: '+filename);
+        },
+      oncomplete:
+        function(response_data) 
+        {
+          alert(response_data);
+        }
+     });
+
+   </script>
 
 
 </div>

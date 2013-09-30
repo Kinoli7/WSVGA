@@ -3289,3 +3289,38 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/svga/index.php/post/delete?id=1
 ---
+2013/09/29 01:34:00 [warning] [application] Failed to set unsafe attribute "image" of "Post".
+in /home/xexu/yii/svga/protected/controllers/PostController.php (82)
+in /home/xexu/yii/svga/index.php (13)
+2013/09/29 01:45:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "localhost".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('localhost')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('localhost')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/localhost/...')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/localhost/svga/php/server.php
+HTTP_REFERER=http://localhost/svga/index.php/post/create
+---
+2013/09/29 01:48:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "route".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('route')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('route')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('post/route')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/post/route
+HTTP_REFERER=http://localhost/svga/index.php/post/create
+---
+2013/09/29 02:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "ad ".' in /home/xexu/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/xexu/yii/framework/web/CController.php(270): CController->missingAction('ad ')
+#1 /home/xexu/yii/framework/web/CWebApplication.php(282): CController->run('ad ')
+#2 /home/xexu/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/ad ')
+#3 /home/xexu/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/xexu/yii/svga/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/svga/index.php/users/ad+
+---

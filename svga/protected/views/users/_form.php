@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+<div class="form" style="padding-bottom:45px;",>
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
@@ -20,18 +20,18 @@
 
 		<?php echo $form->labelEx($model,'Nombre de usuario:'); ?>
 		<div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span><?php echo $form->textField($model,'username',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'username', array("class"=>"alert alert-error")); ?>
+		<?php echo $form->error($model,'username', array("class"=>"alert alert-error")); ?></div>
 
 
 
 		<?php echo $form->labelEx($model,'Contraseña:'); ?>
 		<div class="input-prepend"><span class="add-on"><i class="icon-lock"></i></span><?php echo $form->passwordField($model,'password',array('size'=>60,'maxlength'=>64)); ?>
-		<?php echo $form->error($model,'password', array("class"=>"alert alert-error")); ?>
+		<?php echo $form->error($model,'password', array("class"=>"alert alert-error")); ?></div>
 
 
 		<?php echo $form->labelEx($model,'E-mail:'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'email', array("class"=>"alert alert-error")); ?>
+		<div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span><?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->error($model,'email', array("class"=>"alert alert-error")); ?></div>
 
 
 
@@ -47,4 +47,3 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
-</div>
